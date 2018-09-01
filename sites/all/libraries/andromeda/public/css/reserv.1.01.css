@@ -1,0 +1,1036 @@
+@charset "utf-8";
+
+/* Основной элемент  */
+html body {
+    text-align:center;
+    font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+    font-size:12px;
+    padding:0px;
+    margin:0px;
+    background-color:#d2d2d2;
+}
+
+#SAMO_RESERV {
+    width:1000px;
+    margin:0 auto;
+    background-image:url(../pict/bg.jpg);
+    background-repeat:repeat;
+    box-shadow:#aaaaaa 0px 1px 3px 1px;
+}
+/* Основной элемент  */
+
+
+/* Header  */
+.header {
+    width:1000px;
+    height:60px;
+    line-height: 60px;
+    background-image:url(../pict/head_bg.jpg);
+    background-repeat:repeat-x;
+    background-position: bottom;
+
+}
+
+.header3 {
+    width:1000px;
+    height:60px;
+    background-image:url(../pict/head_bg.jpg);
+    background-repeat:repeat-x;
+    border-bottom:1px solid #999999;
+    margin-bottom:20px;
+}
+
+
+.header4 {
+    width:100%;
+    height:30px;
+    line-height: 30px;
+    background-color: #444444;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 10px;
+}
+
+.header5 {
+    padding-top:10px;
+    padding-bottom: 10px;
+    padding-left: 0px;
+    margin:0 auto;
+    width: 450px;
+    font-size: 18px;
+}
+
+
+
+
+/*
+.header2 {
+    width:1000px;
+    background-image:url(../pict/bg2.jpg);
+    background-repeat:repeat-x;
+    background-position: bottom;
+    background-color: #c8c8c8;
+    box-shadow:#aaaaaa 0px 1px 3px 1px;
+    margin:0px 0px 20px 0px;
+    border-top:1px solid #AAAAAA;
+    border-bottom:1px solid #CCCCCC;
+    line-height:27px;
+    text-align:left;
+    font-size:14px;
+    font-weight:normal;
+    text-indent:20px;
+}
+
+.header2 span {margin: 0 10px; font-size:14px;}
+
+.header2 a {font-size:14px; color:#007700; margin-left:210px;}
+.header2 a:hover {font-size:14px; color:#5efe44;}
+*/
+
+
+.header2 {
+    width: 100%;
+    background-image: url(../pict/bg3.jpg);
+    background-repeat: repeat-x;
+    background-position: bottom;
+    background-color: #DADADA;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    border-top: 1px solid #AAAAAA;
+    border-bottom: 1px solid #999999;
+    color:#555555;
+    line-height: 27px;
+    text-align: left;
+    font-size: 14px;
+}
+
+
+
+
+
+.header2 a {
+    color: #077f5b;
+}
+
+.header2 a img {
+    margin-left: 10px;
+}
+
+.header2 a:hover {
+    color: #FFFFFF;
+}
+
+.leftspan {
+    display: block;
+    vertical-align:middle;
+    line-height:24px;
+    padding-left:20px;
+    margin-left:10px;
+    font-size: 15px;
+}
+
+.leftspan img {
+    vertical-align:middle;
+}
+
+
+
+.rightspan {
+    width: 300px;
+    display:block;
+    text-indent:0px;
+    vertical-align:middle;
+    text-align: right;
+    line-height: 20px;
+    padding-right: 30px;
+}
+
+
+.img {position:absolute; margin:5px 0px 0px 10px; border:0; }
+
+
+.user_name {
+    color:#656565;
+    text-align:left;
+    font-size:14px;
+    line-height:60px;
+    float: left;
+    padding-left: 30px;
+}
+
+
+
+.application {
+    color:#000000;
+    text-align:center;
+    font-size:18px;
+    margin:0 70px;
+}
+
+.kabinet {
+    color:#656565;
+    text-align:right;
+    font-size:18px;
+    float: right;
+    padding-right: 30px;
+    margin-right: 30px;
+    background-image:url(../pict/loguot.png);
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.logout {
+    width:21px;
+    height:21px;
+    padding: 20px 0px 0px 185px;
+    position:absolute;
+    float: right;
+}
+/* Header  */
+
+
+
+/* общие элементы */
+.white_bg {
+    width:940px;
+    margin:0px auto;
+    padding: 10px 30px;
+    background-color:#FFFFFF;
+    box-shadow:#aaaaaa 0px 1px 3px 1px;
+}
+
+.white_bg table {
+    color:#444444;
+    font-size:13px;
+    line-height:13px;
+    background-color:#e1e1e1;
+    text-align:left;
+}
+
+.white_bg table td {
+    height: 28px;
+}
+
+
+.white_bg2 {
+    width:940px;
+    height:240px;
+    margin:0px auto;
+    padding: 10px 30px;
+    background-color:#FFFFFF;
+    box-shadow:#aaaaaa 0px 1px 3px 1px;
+}
+
+.white_bg2 table {
+    line-height:30px;
+    background-color:#e1e1e1;
+    border-top: 1px solid #8a8a8a;
+    text-indent:10px;
+    text-align:left;
+}
+
+.upper_shadow {
+    width:1000px;
+    height:23px;
+    background:url(../pict/shadows.png) no-repeat;
+    margin-top: 0px;
+}
+
+.lower_shadow {
+    width:1000px;
+    height:23px;
+    background:url(../pict/shadows.png) no-repeat center -27px;
+    margin-bottom:0px;
+}
+
+.clock {
+    width: 250px;
+    height:35px;
+    color:#656565;
+    line-height:35px;
+    font-size:14px;
+    clear:right;
+    float: right;
+    padding-top: 10px;
+    padding-right: 20px;
+}
+
+.category {
+    width: 244px;
+    height:35px;
+    line-height:35px;
+    color: #444444;
+    background: #fd902b url(../pict/auth_head_bg.jpg) center;
+    background-repeat:repeat-x;
+    font-size:17px;
+    text-align:left;
+    text-indent:10px;
+}
+
+.category img{
+    width:25px;
+    height:25px;
+    margin: 7px 0px 0px 10px;
+    float:left;
+}
+
+
+.category2 {
+    width: 250px;
+    height:35px;
+    background-color:#fd902b;
+    background-image:url(../pict/cat_bg.jpg);
+    background-repeat:repeat-x;
+    line-height:35px;
+    font-size:18px;
+    margin:0px 690px -32px 0px;
+}
+
+/* общие элементы */
+
+
+
+/* Способы оплаты */
+.price {
+    margin: 0 auto;
+    width: 550px;
+    border-radius: 5px;
+    border: 1px solid #BBBBBB;
+    background-color: #FFFFFF;
+    background-image:url(../pict/price1.png);
+    background-position: bottom;
+    background-repeat: repeat-x;
+    color: #444444;
+    font-size: 22px;
+    text-align: center;
+    padding: 10px;
+    white-space: nowrap;
+}
+
+.price .documents {
+     color:#333333;
+     font-size: 14px;
+     margin: 0 auto;
+ }
+
+.price .applications {
+    color:#333333;
+    font-size: 14px;
+    margin: 0 auto;
+    margin-left: 50px;
+    padding-top: 30px;
+    padding: 0 20px;
+}
+
+.payment {
+    width:100%;
+
+
+}
+
+.payment_head {
+    background: #f8a640 url(../pict/auth_head_bg.jpg)center repeat-x;
+    height:40px;
+    line-height: 40px;
+    color: #2c2c2c;
+    font-size: 20px;
+    font-weight: 100;
+}
+
+.payment_tr {
+    background-color: #FFFFFF;
+}
+
+.payment_tr td {
+    height: 50px;
+    font-size: 14px;
+    color: #636363;
+
+}
+
+.v_line {
+    background-image:url(../pict/v_line.png);
+    background-position: left;
+    background-repeat: no-repeat;
+}
+
+tr.bordered_top td {
+    border-top: 1px solid #d5d5d5;
+}
+
+tr.bordered_bottom td {
+    border-bottom: 1px solid #d5d5d5;
+}
+
+.pay_btn {
+    margin: 0 10px;
+    width: 107px;
+    height: 28px;
+    background:url(../pict/misc.png) -210px -42px no-repeat;
+    border: 0;
+    border-radius: 5px;
+    color:#444444;
+    font-weight: bold;
+}
+
+.pay_btn:hover {
+    margin: 0 10px;
+    width: 107px;
+    height: 28px;
+    background:url(../pict/misc.png) -210px -82px no-repeat;
+    border: 0;
+    border-radius: 5px;
+    color:#444444;
+    font-weight: bold;
+}
+
+.enter_btn_mini {
+    margin-left:100px;
+    margin-top: -15px;
+    width: 50px;
+    height: 24px;
+    border: 0px;
+    border-left:1px solid #9c4718;
+    border-top:1px solid #9c4718;
+    border-right:1px solid #9c4718;
+    border-bottom:1px solid #9c4718;
+    border-radius: 5px;
+    background-image: url(../pict/auth_btn_bg_mini.png);
+    color: #FFFFFF;
+    font-size: 16px;
+    vertical-align: middle;
+    text-shadow:
+        -1px -1px 0 #b4521c,
+        1px -1px 0 #b4521c,
+        -1px 1px 0 #b4521c,
+        1px 1px 0 #b4521c;
+}
+
+.logo {
+    width:100px;
+    height: 50px;
+    padding-left: 5px;
+}
+
+.company_name {
+    color:#636363;
+    font-size: 16px !important;
+    text-align: left;
+    width: 250px;
+    padding-left: 10px;
+}
+
+
+.description {
+    height: 50px;
+    color:#636363;
+    font-size: 14px;
+    text-align: left;
+    padding-left: 10px;
+}
+
+
+/* Способы оплаты */
+
+
+
+/* Общиая информация */
+
+.main_info {width:100%;
+}
+
+.devide {
+    width: 10px;
+    background-color: #FFFFFF;
+}
+
+.information_1 {
+    padding-left: 5px;
+    color:#000000;
+    border-top:1px solid #FFFFFF;
+    border-bottom:1px solid #8a8a8a;
+    width:110px;
+    background-color:#cacaca;
+}
+
+.information_2 {
+    padding-left: 5px;
+    line-height: 13px;
+    font-size: 13px;
+    border-top:1px solid #FFFFFF;
+    border-bottom:1px solid #8a8a8a;
+}
+
+.information_2 .tour_price {
+    font-size: 18px;
+    color:#000000;
+    font-weight: bold;
+}
+
+.td_width {
+    width:250px;
+}
+
+.reserved {font-weight:bold;
+    color:#2aaf20;}
+
+.zero {font-weight:bold;
+    color:#cc0000;}
+
+.buttons {
+    background-color: #FFFFFF;
+    padding: 5px 0;
+    margin: 0 auto;
+    text-align: right;
+}
+
+.middle {
+    font-size: 22px;
+    color: #333333;
+}
+
+.middle span {
+    font-size: 18px;
+    color: #555555;
+}
+
+/* Общиая информация */
+
+
+
+/* Информация о туристах */
+.tourist_info {
+    width:100%;
+}
+
+.tourist_info td {border-top:1px solid #FFFFFF; border-bottom:1px solid #8a8a8a; text-align:left; padding-left: 10px;}
+
+.tourist_info_tr1 {
+    text-align:center;
+    color:#000000;
+    background-color:#cacaca;
+    border-top:1px solid #FFFFFF;
+    border-bottom:1px solid #8a8a8a;
+}
+
+.tourist_info_tr2 {
+    background-color:#cacaca;
+    border-top:1px solid #FFFFFF;
+    border-bottom:1px solid #8a8a8a;
+}
+
+.tourist_info_td1 {width:190px;}
+.tourist_info_td2 {width:190px; text-align:left !important;}
+/* Информация о туристах */
+
+
+
+/* Информация о проживании */
+.hotel_info {
+    width:100%;
+}
+
+.hotel_info td {border-top:1px solid #FFFFFF; border-bottom:1px solid #8a8a8a; text-align:left; padding-left: 10px;}
+
+.hotel_info_tr1 {
+    text-align:center;
+    color:#000000;
+    background-color:#cacaca;
+    border-top:1px solid #FFFFFF;
+    border-bottom:1px solid #8a8a8a;
+}
+
+.hotel_info_tr2 {
+    background-color:#cacaca;
+    border-top:1px solid #FFFFFF;
+    border-bottom:1px solid #8a8a8a;
+}
+
+/* Информация о проживании */
+
+
+
+/* Информация о транспорте */
+.transport_info {
+    width:100%;
+}
+
+.transport_info td {border-top:1px solid #FFFFFF; border-bottom:1px solid #8a8a8a; text-align:left; padding-left: 10px;}
+
+.transport_info_tr1 {
+    text-align:center;
+    color:#000000;
+    background-color:#cacaca;
+    border-top:1px solid #FFFFFF;
+    border-bottom:1px solid #8a8a8a;
+}
+
+.transport_info_tr2 {
+    background-color:#cacaca;
+    border-top:1px solid #FFFFFF;
+    border-bottom:1px solid #8a8a8a;
+}
+
+/* Информация о транспорте */
+
+
+
+/* Информация об услугах */
+.service_info {
+    width:100%;
+}
+
+.service_info td {border-top:1px solid #FFFFFF; border-bottom:1px solid #8a8a8a; text-align:left; padding-left: 10px;}
+
+.service_info_tr1 {
+    text-align:center;
+    color:#000000;
+    background-color:#cacaca;
+    border-top:1px solid #FFFFFF;
+    border-bottom:1px solid #8a8a8a;
+}
+
+.service_info_tr2 {
+    background-color:#cacaca;
+    border-top:1px solid #FFFFFF;
+    border-bottom:1px solid #8a8a8a;
+}
+
+.transport_info_td1 { width:420px; text-align:left !important; text-indent:130px !important;}
+
+/* Информация об услугах */
+
+.global_error {
+
+    margin: 0 auto;
+
+    width: 500px;
+    height: 556px;
+    font-weight: bold;
+    font-size: 16px;
+    background-image: url(../pict/error_bg2.png);
+    background-repeat: no-repeat;
+}
+
+.error {
+    color: brown;
+}
+
+
+.error_table {
+    width: 100%;
+    height: 182px;
+    background-color: #FFFFFF;
+    color: brown;
+}
+
+.error_td1 {
+
+    width: 182px;
+    height: 182px;
+    background-color: #ff8320;
+    background-image: url(../pict/error.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+.error_td2 {
+    font-size: 36px;
+color:#4b4846;
+}
+
+.error_td2 span {
+    color: #716e6b;
+    display: block;
+    padding-top: 20px;
+    font-size: 16px;
+    font-style: italic;
+}
+
+
+
+#preloader {
+    display: none;
+}
+
+#preloader .blocker {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    background: #D2D2D2;
+    opacity: 0.3;
+    filter: alpha(opacity = 30);
+    cursor: wait;
+}
+
+#preloader .runner {
+    position: fixed;
+    width: 160px;
+    height: 30px;
+    left: 50%;
+    top: 50%;
+    margin-left: -80px;
+    z-index: 2000;
+    cursor: wait;
+}
+
+#preloader .runner .div1 {
+    background-color: #FFB6C1;
+    background-image:url(../pict/loader5-1.gif);
+    background-repeat: no-repeat;
+    color: #2F4F4F;
+    line-height: 30px;
+    overflow: hidden;
+    vertical-align: middle;
+    white-space: nowrap;
+    width: 40px;
+    height: 30px;
+    float:left;
+}
+
+#preloader .runner .div2 {
+    background-color: #FFB6C1;
+    background-image:url(../pict/loader5-2.gif);
+    background-repeat: no-repeat;
+    font-weight: bold;
+    line-height: 30px;
+    overflow: hidden;
+    vertical-align: middle;
+    white-space: nowrap;
+    width: 120px;
+    height: 30px;
+}
+
+@media screen {
+    div#pppreloader {
+        position: fixed;
+    }
+
+    * html div#pppreloader {
+        /*        top: expression( ( 5 + ( ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop ) ) + 'px' ); */
+        position: absolute;
+        height: 24px;
+    }
+
+}
+
+
+table.samo_list {
+    width: 500px;
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+    margin: 0px 20px 0px 20px;
+}
+
+table.samo_list td {
+    border-top: 1px solid #FFFFFF;
+    border-bottom: 1px solid #999999;
+    font-size: 14px;
+}
+
+
+tr.clickable:hover {
+    background: #999999;
+}
+
+tr.clickable_pay:hover {
+    background: #e1e1e1;
+}
+
+.tr_head {
+    background-color:#f8a740;
+}
+
+#samo_list_btn {
+    width:200px;
+    height: 30px;
+    border: 0;
+    font-size: 14px;
+    margin-right: 0px;
+    text-indent: 30px;
+    padding-bottom: 2px;
+    color: #077f5b;
+}
+#samo_list_btn:hover {
+    color: #f36f26;
+}
+
+
+
+#samo_pays_btn{
+    width:200px;
+    height: 30px;
+    border: 0;
+    background: url(../pict/misc.png) -1px -1px no-repeat;
+    font-size: 14px;
+    text-indent: 25px;
+    padding-bottom: 2px;
+    font-size: 16px;
+    color:#444444;
+    margin-left: 15px;
+}
+
+#samo_pays_btn:hover {
+    background: url(../pict/misc.png) -1px -41px no-repeat;
+    color: #555555;
+}
+
+#samo_doc_list {
+    width: 700px;
+}
+
+#samo_documents_btn {
+color: #077f5b;
+
+}
+
+#samo_documents_btn:hover {
+color: #f36f26;
+}
+
+.application_header {
+    background-image:url(../pict/cat_bg.jpg);
+    background-position: bottom;
+    background-repeat: repeat-x;
+    text-align: center;
+    height: 30px;
+    font-size: 16px;
+    color:#2c2c2c;
+}
+
+.application_tr1 {background-color: #E1E1E1;}
+
+.application_tr2 {background-color: #cacaca;}
+
+
+table.samo_list2 {
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+}
+
+table.samo_list2 .link {
+    background-image:url(../pict/print.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    padding-left: 20px;
+    color: #555555;
+    text-decoration: none;
+}
+
+
+table.samo_list2 a {
+    text-decoration: none;
+    color:#777777;
+}
+
+table.samo_list2 td {
+    border-top: 1px solid #FFFFFF;
+    border-bottom: 1px solid #999999;
+    font-size: 14px;
+    height: 20px;
+    line-height: 20px;
+}
+
+
+.application_header2 {
+    background-image:url(../pict/cat_bg.jpg);
+    text-align: left;
+    text-indent: 20px;
+    width: 100%;
+    height: 30px;
+    font-size: 16px;
+    color:#2c2c2c;
+}
+
+.allign_left {text-align: left; padding-left: 10px;}
+
+.application_header2 tr {height: 24px; line-height: 24px;border-bottom: 1px solid #999999;}
+
+.application_header2 td {border-bottom: 1px solid #999999; border-top: 1px solid #FFFFFF;}
+
+.application2_tr1 {background-color: #E1E1E1;}
+.td {color: #555555;font-style: italic; text-align: right; padding: 0px 10px 0px 10px}
+
+
+.application2_tr2 {background-color: #cacaca;}
+
+
+.active_claim {
+    background-color: #CCFFCC;
+}
+
+.samo_pay_form {
+    background-color: #DADADA;
+    background-image: url("../pict/bg3.jpg");
+    background-repeat: repeat-x;
+    background-position: bottom;
+    border-radius: 5px;
+    padding: 3px;
+}
+
+.samo_pay_form td select {
+    width: 155px !important;
+    border-radius: 5px;
+    border: 0;
+    border: 1px solid #999999;
+    height: 24px;
+    padding: 0 6px;
+    margin: 5px 0;
+    line-height: 20px;
+    vertical-align: middle;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+.samo_pay_form td input {
+    width: 150px !important;
+    border-radius: 5px;
+    border: 0;
+    border: 1px solid #999999;
+    height: 24px;
+    padding: 0px 0 0 5px;
+    margin: 5px 0;
+    line-height: 24px;
+    vertical-align: middle;
+}
+
+.samo_pay_form input.submit_pay_form {
+margin-left:70px;
+margin-top: 5px;
+width: 155px !important;
+height: 24px;
+border: 0px;
+border-left:1px solid #9c4718;
+border-top:1px solid #9c4718;
+border-right:1px solid #9c4718;
+border-bottom:1px solid #9c4718;
+border-radius: 5px;
+background-image: url(../pict/auth_btn_bg_mini.png);
+color: #FFFFFF;
+font-size: 16px;
+vertical-align: middle;
+text-shadow:
+-1px -1px 0 #b4521c,
+1px -1px 0 #ca7020,
+-1px 1px 0 #ca7020,
+1px 1px 0 #ca7020;
+}
+
+.application_data {
+    display: inline-block;
+    background: url("../pict/bg_icons.png") no-repeat left -825px;
+    width: 28px;
+    height: 25px;
+    line-height: 25px;
+}
+
+.information_data {
+    display: inline-block;
+    background: url("../pict/bg_icons.png") no-repeat left -850px;
+    width: 28px;
+    height: 25px;
+    line-height: 25px;
+    margin-right: 5px;
+}
+
+.user_data {
+    display: inline-block;
+    background: url("../pict/bg_icons.png") no-repeat left -275px;
+    width: 28px;
+    height: 25px;
+    line-height: 25px;
+    margin-right: 5px;
+}
+
+.tourists_data {
+    display: inline-block;
+    background: url("../pict/bg_icons.png") no-repeat left -875px;
+    width: 28px;
+    height: 25px;
+    line-height: 25px;
+    margin-right: 5px;
+}
+
+.hotel_data {
+    display: inline-block;
+    background: url("../pict/bg_icons.png") no-repeat left -900px;
+    width: 28px;
+    height: 25px;
+    line-height: 25px;
+    margin-right: 5px;
+}
+
+.transport_data {
+    display: inline-block;
+    background: url("../pict/bg_icons.png") no-repeat left -225px;
+    width: 28px;
+    height: 25px;
+    line-height: 25px;
+    margin-right: 5px;
+}
+
+.services_data {
+    display: inline-block;
+    background: url("../pict/bg_icons.png") no-repeat left -925px;
+    width: 28px;
+    height: 25px;
+    line-height: 25px;
+    margin-right: 5px;
+}
+
+.instructions {
+    display: inline-block;
+    background: url("../pict/bg_icons.png") no-repeat left -950px;
+    width: 22px;
+    height: 22px;
+    line-height: 22px;
+}
+
+.small_docs {
+    display: inline-block;
+    background: url("../pict/bg_icons.png") no-repeat left -975px;
+    width: 16px;
+    height: 20px;
+    line-height: 20px;
+}
+
+.samo_agency_info {
+    text-align: left;
+    color: #000;
+}
+
+.samo_agency_info h2 {
+    width: 100%;
+}
+
+.samo_agency_info_element {
+    color: #444;
+    padding: 0 10px 10px 10px;
+    display: inline-block !important;
+}
+
+.samo_agency_info_title {
+    font-weight: bold;
+    color: #000;
+}
+.confirm_code_container {
+    background:  #fafad2;
+    border-radius: 3px;
+    padding: 5px;
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+.confirm_code_container input {
+    text-align: center;
+    font-weight: bold;
+}
+.confirm_code_label {
+    color: #555;
+}

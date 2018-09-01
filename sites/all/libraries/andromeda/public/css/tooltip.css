@@ -1,0 +1,39 @@
+div.samo_tooltip {
+    position: absolute;
+    display: none;
+    text-align: center;
+    opacity: 0.95;
+    filter: alpha(opacity = 95);
+    z-index: 2000;
+}
+
+div.samo_tooltip div.samo_tooltip_content {
+    background: white;
+    border: 2px solid gray;
+    padding: 10px;
+    border-radius: 7px;
+    box-shadow: 0px 10px 20px #444444;
+    color: black;
+    font-family: tahoma;
+}
+
+div.samo_tooltip div.samo_tooltip_arrow1 {
+    position: absolute;
+    top: -2px;
+    left: 50%;
+
+    width: 0px;
+    height: 0px;
+    border: 16px solid gray;
+    border-color: gray transparent transparent gray;
+}
+
+div.samo_tooltip div.samo_tooltip_arrow2 {
+    position: absolute;
+    left: -14px;
+    top: -16px;
+    width: 0px;
+    height: 0px;
+    border: 14px solid white;
+    border-color: white transparent transparent white;
+}

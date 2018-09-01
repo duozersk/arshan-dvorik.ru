@@ -1,0 +1,314 @@
+#tourist_claim div.auth td.name {
+    text-align: center;
+    font-weight: bold;
+}
+#tourist_claim .hidden {
+    display: none;
+}
+#tourist_claim .highlight {
+    background: #CBE0C1;
+}
+#tourist_claim .gray {
+    color: gray;
+}
+#tourist_claim .star {
+    color: #cc7722;
+    font-weight: bold;
+    font-size: 14px;
+}
+#tourist_claim .arrow {
+    font-weight: bold;
+    color: gray;
+}
+#tourist_claim .big {
+    font-size: 16px;
+}
+#tourist_claim table#auth, #tourist_claim table#authed {
+    border-collapse: separate;
+    border-spacing: 5px;
+    background: url(title_back.gif) repeat-x #EAF0FC;
+    border: 1px solid silver;
+    border-radius: 5px;
+}
+
+#tourist_claim table#auth td, #tourist_claim table#authed td{
+    *padding: 2px;
+}
+
+table#authed td{
+    font-size: 13px;
+}
+
+#tourist_claim table#authed {
+    display: none;
+}
+#tourist_claim .shadow_box {
+    box-shadow: gray 5px 5px 5px;
+}
+#tourist_claim table#auth .header, #tourist_claim table#authed .header {
+    text-align: left;
+    font-weight: bold;
+    color: #444444;
+}
+#tourist_claim div.note {
+    height: 50px;
+    overflow: auto;
+    text-align: left;
+}
+#tourist_claim #authed_name {
+    font-weight: bold;
+}
+/* ----- claim conditions ----- */
+#tourist_claim span.condition_offer, #tourist_claim span.condition_prebooking, #tourist_claim span.condition_awaiting {
+    color: gray;
+}
+#tourist_claim span.condition_booked {
+    color: green;
+}
+#tourist_claim span.condition_refusal {
+    color: red;
+}
+/* ----- claim statuses ----- */
+#tourist_claim span.status_notactivated, #tourist_claim span.status_notreaded {
+    color: gray;
+}
+#tourist_claim span.status_processed {
+    color: black;
+}
+#tourist_claim span.status_confirmed, #tourist_claim span.status_confirmedandpaid {
+    color: green;
+}
+#tourist_claim span.status_unconfirmed, #tourist_claim span.status_cancelled, #tourist_claim span.status_awaitingcancel {
+    color: red;
+}
+/* ----- claim pay status ----- */
+#tourist_claim span.paystatus_notpaid, #tourist_claim span.paystatus_partiallypaid {
+    color: gray;
+}
+#tourist_claim span.paystatus_paid {
+    color: green;
+}
+#tourist_claim span.paystatus_penalty, #tourist_claim span.paystatus_partiallypaidpenalty, #tourist_claim span.paystatus_paidpenalty {
+    color: red;
+}
+#tourist_claim .claim_list_info_scroller {
+    height: 250px;
+    overflow-y: auto;
+}
+#tourist_claim .selected_claim {
+    background: #CBE0C1;
+}
+#tourist_claim .claim_list_info ._element {
+    cursor: pointer;
+}
+
+#tourist_claim .clickable_on {
+    background: #EFEFEF;
+    cursor: pointer;
+}
+
+#tourist_claim .clickable_on_show_claim {
+    background: #CBE0C1 !important;
+    cursor: pointer;
+}
+
+#tourist_claim table.replacer {
+    border: 1px solid silver;
+    background: white;
+    width: 100%;
+}
+#tourist_claim table.replacer th {
+    background: url("title_back.gif") repeat-x scroll center top #EAF0FC;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #444444;
+    text-align: left;
+    border-bottom: 1px solid #EFEFEF;
+}
+#tourist_claim table.replacer td {
+    padding: 8px;
+}
+
+#tourist_claim fieldset {
+    padding-top: 10px;
+    *padding-top: 0px;
+}
+
+#tourist_claim #popup_form {
+    background: url("title_back.gif") repeat-x scroll center top #EAF0FC;
+    border: 1px solid #444444;
+    margin-top: -75px;
+    border-radius: 5px;
+    position: absolute;
+    display: none;
+    text-align: center;
+    z-index: 1000;
+    padding: 10px;
+}
+
+#tourist_claim #popup_form table {
+    border-collapse: separate;
+}
+
+#tourist_claim #popup_form table td {
+    color: black;
+    padding: 5px;
+}
+
+#tourist_claim #veil {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    display: none;
+    background: black;
+    filter: alpha(opacity = 60);
+    opacity: 0.6;
+    z-index: 999;
+    cursor: wait;
+}
+
+#tourist_claim .tourist_claim_help td{
+    padding: 3px;
+}
+
+#tourist_claim .tourist_claim_help {
+    width: 320px;
+    background: white url("help.png") no-repeat right bottom;
+}
+
+#tourist_claim .tourist_claim_help a.instruction {
+    color: green;
+}
+
+
+#tourist_claim .comment {
+    font-style: italic;
+    color: gray;
+}
+
+#tourist_claim div.form_tourist_instruction {
+    background-color: white;
+}
+
+#tourist_claim .close_form {
+    cursor: pointer;
+    color: gray;
+    font-weight: bold;
+    font-family: tahoma;
+    background: white;
+    margin: 3px;
+}
+
+.samo_container .module_header {
+    font-size: 1.3em;
+    color: gray;
+    font-weight: bold;
+    margin-left: 200px;
+}
+
+#tourist_claim .tourist_claim_error {
+    color: red;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+#tourist_claim .claim_main_info {
+    border: 1px solid gray;
+    background: white;
+    padding: 4px;
+    font-size: 12px;
+    line-height: 20px;
+}
+
+#tourist_claim .claim_main_info_status {
+    color: #555555;
+}
+
+#tourist_claim .claim_main_info_el{
+    margin-bottom: 7px;
+    display: block;
+}
+
+#loading_title {
+    line-height: 20px;
+    text-align: center;
+}
+
+#tourist_claim .adv_button {
+    margin: 6px;
+    background-color: white;
+    border: 1px solid #dddddd;
+    border-radius: 3px;
+    padding: 3px;
+    box-shadow: 0px 3px 3px #dddddd;
+    cursor: pointer;
+    color: #444444;
+}
+
+#tourist_claim .adv_button:hover {
+    color: black;
+    border-color: #AAAAAA;
+    box-shadow: 0px 3px 3px #AAAAAA;
+}
+
+#tourist_claim .show_documents {
+    background: url(documents.png) no-repeat 5px 4px;
+    padding-left: 23px;
+}
+
+#tourist_claim .show_pay {
+    background: url(pay.png) no-repeat 5px 4px;
+    padding-left: 23px;
+}
+
+#tourist_claim .show_all_claims {
+    background: url(claim_list.png) no-repeat 5px 4px;
+    padding-left: 23px;
+}
+
+#tourist_claim .documents_info, #tourist_claim .pay_info {
+    width: 100%;
+}
+
+#tourist_claim .tourist_claim_buyer_name td {
+    line-height: 30px;
+}
+
+#authed_email {
+    color: #ACACAF;
+    text-shadow: 1px 1px white;
+}
+
+#authed.mini {
+    width: 50%;
+}
+
+#tourist_claim .tourist_claim_help_container {
+    display: none;
+}
+
+
+#tourist_claim .replacer_close {
+    color: gray;
+    text-align: right;
+    cursor: pointer;
+    font-size: 11px;
+    font-weight: normal;
+    text-decoration: underline;
+}
+
+#tourist_claim .claim_main_info {
+    display: none;
+}
+
+#tourist_claim .claim_list_form {
+    background: white !important;
+    width: 60%;
+}
+
+#tourist_claim .claim_list_odd {
+    background: #F3F3F3;
+}

@@ -1,0 +1,11 @@
+#fast_search {
+    margin: 0;
+    display: block !important;
+}
+.samo_container .n1 {
+    width: 25em;
+}
+
+#fast_search select.spin, #fast_search #COSTMAX {
+    width: 65px !important;
+}

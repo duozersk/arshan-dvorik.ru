@@ -1,0 +1,594 @@
+
+#preloader {
+    display: none;
+}
+
+#preloader .blocker {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    background: #D2D2D2;
+    opacity: 0.3;
+    filter: alpha(opacity = 30);
+    cursor: wait;
+}
+
+#preloader .runner {
+    position: fixed;
+    width: 160px;
+    height: 30px;
+    left: 50%;
+    top: 50%;
+    margin-left: -80px;
+    z-index: 2000;
+    cursor: wait;
+}
+
+#preloader .runner .div1 {
+    background-color: #FFB6C1;
+    background-image:url(../pict/loader5-1.gif);
+    background-repeat: no-repeat;
+    color: #2F4F4F;
+    line-height: 30px;
+    overflow: hidden;
+    vertical-align: middle;
+    white-space: nowrap;
+    width: 40px;
+    height: 30px;
+    float:left;
+}
+
+#preloader .runner .div2 {
+    background-color: #FFB6C1;
+    background-image:url(../pict/loader5-2.gif);
+    background-repeat: no-repeat;
+    font-weight: bold;
+    line-height: 30px;
+    overflow: hidden;
+    vertical-align: middle;
+    white-space: nowrap;
+    width: 120px;
+    height: 30px;
+}
+
+@media screen {
+    div#pppreloader {
+        position: fixed;
+    }
+
+    * html div#pppreloader {
+        /*        top: expression( ( 5 + ( ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop ) ) + 'px' ); */
+        position: absolute;
+        height: 24px;
+    }
+
+}
+
+
+.andr_container .kids_age {
+    font-size:13px !important;
+    text-align: left;
+    margin: 5px 0 0 0;
+
+}
+
+.andr_container .samo_child_age_title {
+    display: none;
+    text-align: center;
+}
+
+
+.andr_container .samo_child_age {
+    display: none;
+    width: 35px;
+    border: 0;
+    border-radius: 5px;
+    padding: 2px 2px;
+    border:1px solid #777777;
+    background-image: url("../pict/select_bg2.jpg");
+    background-position: center top;
+    background-repeat: repeat-x;
+    text-align: center;
+}
+
+/*----------Select----------*/
+.slct {
+    color:#444444;
+    border: 1px solid #777777;
+    border-radius: 5px;
+    padding:2px 3px;
+    background: url(../pict/select_bg.jpg)top repeat-x #FFFFFF;
+    text-align: center;
+}
+
+@media all and (-webkit-min-device-pixel-ratio:0) {
+    /*здесь стили для хрома*/
+}
+
+.slct select {
+    width: 100%;
+    border: 0;
+    font-size:14px;
+    line-height:14px;
+    padding-right: 2px;
+}
+
+.slct select option {
+    width: 100%;
+    font-size:14px;
+    line-height:14px;
+}
+
+/*----------Select----------*/
+
+
+
+/*----------Кнопка из bootstrap----------*/
+.btn {
+    text-decoration: none;
+    display: inline-block;
+    *display: inline;
+    padding: 5px 40px 5px;
+    margin-bottom: 0;
+    *margin-left: .3em;
+    font-size: 16px;
+    line-height: 18px;
+    *line-height: 20px;
+    color: #444444;
+    text-align: center;
+    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+    vertical-align: middle;
+    cursor: pointer;
+    background-color: #f5f5f5;
+    *background-color: #e6e6e6;
+    background-image: -ms-linear-gradient(top, #ffffff, #e6e6e6);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#e6e6e6));
+    background-image: -webkit-linear-gradient(top, #ffffff, #e6e6e6);
+    background-image: -o-linear-gradient(top, #ffffff, #e6e6e6);
+    background-image: linear-gradient(top, #ffffff, #e6e6e6);
+    background-image: -moz-linear-gradient(top, #ffffff, #e6e6e6);
+    background-repeat: repeat-x;
+    border: 1px solid #cccccc;
+    *border: 0;
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+    border-color: #e6e6e6 #e6e6e6 #bfbfbf;
+    border-bottom-color: #b3b3b3;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    filter: progid:dximagetransform.microsoft.gradient(startColorstr='#ffffff', endColorstr='#e6e6e6', GradientType=0);
+    filter: progid:dximagetransform.microsoft.gradient(enabled=false);
+    *zoom: 1;
+    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+    -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.btn:hover,
+.btn:active,
+.btn.active,
+.btn.disabled,
+.btn[disabled] {
+    background-color: #d6d2ca;
+    *background-color: #d9d9d9;
+}
+
+.btn:active,
+.btn.active {
+    background-color: #cccccc \9;
+}
+
+.btn:first-child {
+    *margin-left: 0;
+}
+
+.btn:hover {
+    color: #333333;
+    text-decoration: none;
+    background-color: #d6d2ca;
+    *background-color: #d9d9d9;
+    /* Buttons in IE7 don't get borders, so darken on hover */
+
+    background-position: 0 -15px;
+    -webkit-transition: background-position 0.1s linear;
+    -moz-transition: background-position 0.1s linear;
+    -ms-transition: background-position 0.1s linear;
+    -o-transition: background-position 0.1s linear;
+    transition: background-position 0.1s linear;
+}
+
+.btn:focus {
+    outline: thin dotted #333;
+    outline: 5px auto -webkit-focus-ring-color;
+    outline-offset: -2px;
+}
+
+.btn.active,
+.btn:active {
+    background-color: #e6e6e6;
+    background-color: #d9d9d9 \9;
+    background-image: none;
+    outline: 0;
+    -webkit-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+    -moz-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.btn.disabled,
+.btn[disabled] {
+    cursor: default;
+    background-color: #e6e6e6;
+    background-image: none;
+    opacity: 0.65;
+    filter: alpha(opacity=65);
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+/*----------Кнопка из bootstrap----------*/
+
+
+
+/*----------button,input,select,textarea  из bootstrap----------*/
+
+.search_field {
+    width:130px;
+    margin:0px 0px 0px 0px !important;
+    padding: 3px;
+}
+
+.search_field2 {
+    width:160px;
+    margin:0px;
+    padding: 3px;
+    display: inline-block;
+}
+
+button,
+input,
+textarea {
+    font-size: 100%;
+    vertical-align: middle;
+    background-image: url(../pict/select_bg.jpg);
+    background-position:top;
+    background-repeat:repeat-x;
+}
+
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"],
+.uneditable-input {
+    background-color: #ffffff;
+    border: 1px solid #777777;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    -webkit-transition: border linear 0.2s, box-shadow linear 0.2s;
+    -moz-transition: border linear 0.2s, box-shadow linear 0.2s;
+    -ms-transition: border linear 0.2s, box-shadow linear 0.2s;
+    -o-transition: border linear 0.2s, box-shadow linear 0.2s;
+    transition: border linear 0.2s, box-shadow linear 0.2s;
+    border-radius:5px;
+}
+
+
+label,
+input,
+button,
+select,
+textarea {
+    font-size: 13px;
+    font-weight: normal;
+}
+
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+.uneditable-input:focus {
+    border-color: rgba(070, 070, 070, 0.5);
+    outline: 0;
+    outline: thin dotted \9;
+    /* IE6-9 */
+
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
+    -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin: 3px 0;
+    *margin-top: 0;
+    /* IE7 */
+
+    line-height: normal;
+    cursor: pointer;
+}
+/*----------button,input,select,textarea  из bootstrap----------*/
+
+
+
+/*----------Header----------*/
+.header {
+    background-color:  #F8A740;
+    background-image: url(../pict/auth_head_bg.jpg);
+    background-position:center;
+    background-repeat: repeat-x;
+}
+/*----------Header----------*/
+
+
+/*----------Иконки-BG image----------*/
+
+.yellow_star{
+    background-image: url(../pict/yellow_star.png);
+    background-position:50px;
+    background-repeat:no-repeat;
+}
+
+.meal_result{
+    background-image: url(../pict/meal2.png);
+    background-position:0px;
+    background-repeat:no-repeat;
+}
+
+.hotel{
+    display: inline-block;
+    background: url("../pict/bg_icons.png") no-repeat 0px -355px;
+    width: 20px;
+    height: 24px;
+}
+
+/*.hotel_search {
+    background: #ffffff url(../pict/bg_icons.png) repeat-x 0px -1467px !important;
+} */
+
+.search{
+    background: url(../pict/bg_icons.png) 115px -1299px no-repeat;
+}
+
+
+.from{
+    background-image: url(../pict/from.png);
+    background-position:30px;
+    background-repeat:no-repeat;
+}
+
+.to{
+    background-image: url(../pict/to.png);
+    background-position:30px;
+    background-repeat:no-repeat;
+}
+
+#SAMO_SEARCH .town {
+
+}
+
+.hotel_pic {
+background: url(../pict/hotel.png) left center no-repeat;
+}
+
+.airplane {
+    display: inline-block;
+    background: url("../pict/bg_icons.png") no-repeat left -225px;
+    width: 28px;
+    height: 25px;
+    line-height: 25px;
+    margin-right: 5px;
+    float: left;
+}
+
+.airplane2 {
+    display: inline-block;
+    background: url("../pict/bg_icons.png") no-repeat center -225px;
+    width: 50px;
+    height: 25px;
+    line-height: 25px;
+}
+
+.calendar {
+    background: url(../pict/bg_icons.png) right -1230px no-repeat;
+}
+
+.vilet_mini .calendar {
+    background: url(../pict/bg_icons.png) right -1229px no-repeat #ffffff !important;
+
+}
+
+.room {
+    display: inline-block;
+    background: url("../pict/bg_icons.png") no-repeat 0px -450px;
+    width: 20px;
+    height: 20px;
+}
+
+.book-a {
+    display: inline-block;
+    background: url("../pict/bg_icons.png") no-repeat 0px -475px;
+}
+
+.book-a:hover {
+    display: inline-block;
+    background: url("../pict/bg_icons.png") no-repeat 0px -500px;
+}
+
+
+.book-i {
+    display: inline-block;
+    background: url("../pict/bg_icons.png") no-repeat 0px -525px;
+}
+
+.book-i:hover {
+    display: inline-block;
+    background: url("../pict/bg_icons.png") no-repeat 0px -550px;
+}.arrow_mini {
+     display: inline-block;
+     width: 30px;
+     height: 30px;
+     background: url(../pict/bg_icons.png) 0px -1465px no-repeat;
+     margin-left: 0px;
+ }
+
+
+
+.clock {
+    display: inline-block;
+    background: url("../pict/bg_icons.png") no-repeat left -250px;
+    width: 28px;
+    height: 25px;
+    line-height: 25px;
+    margin-right: 5px;
+    float: left;
+}
+
+
+.meal{
+    display: inline-block;
+    background: url("../pict/bg_icons.png") no-repeat 0px -400px;
+    width: 20px;
+    height: 24px;
+}
+
+.placement {
+    display: inline-block;
+    background: url("../pict/bg_icons.png") no-repeat 0px -425px;
+    width: 20px;
+    height: 20px;
+}
+
+
+.planet {
+    display: inline-block;
+    background: url("../pict/bg_icons.png") no-repeat 0px -329px;
+}
+
+.resort {
+    display: inline-block;
+    background: url("../pict/bg_icons.png") no-repeat 0px -325px;
+    width: 20px;
+    height: 24px;
+}
+
+.star{
+    display: inline-block;
+    background: url("../pict/bg_icons.png") no-repeat 0px -377px;
+    width: 20px;
+}
+
+.user {
+    display: inline-block;
+    background: url("../pict/bg_icons.png") no-repeat left -275px;
+    width: 28px;
+    height: 25px;
+    line-height: 25px;
+    margin-right: 5px;
+    float: left;
+}
+
+
+a.arrow{
+    background-image: url(../pict/arrows.png);
+    background-position:175px 4px;
+    background-repeat:no-repeat;
+    display:block;
+}
+
+a.arrow:hover{
+    background-position:175px -22px;
+}
+
+.arrow_mini {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background: url(../pict/bg_icons.png) 0px -1465px no-repeat;
+    margin-left: 5px;
+}
+
+
+a.arrow_price{
+    background-image: url(../pict/arrows2.png);
+    background-position:150px 4px;
+    background-repeat:no-repeat;
+    display:block;
+}
+
+a.arrow_price:hover{
+    background-position:150px -20px;
+}
+
+
+.coins {
+    display: inline-block;
+    background: url("../pict/bg_icons.png") no-repeat left -300px;
+    width: 28px;
+    height: 25px;
+    line-height: 25px;
+    margin-right: 5px;
+    float: left;
+}
+
+
+.samo_error {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-color: white;
+    background-image: url("../pict/error.jpg");
+    background-position: left top;
+    background-repeat: no-repeat;
+    height: 182px;
+    width: 500px;
+    padding-left: 200px;
+    /*color: #4B4846;*/
+    color: brown;
+    font-size: 26px;
+    line-height: 30px;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+
+.andr_container .samo_no_bron_blocker {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    background-image: url(../pict/tr_bg.png);
+    z-index: 998;
+}
+
+#FORM_BLOCKER {
+    display: none;
+}

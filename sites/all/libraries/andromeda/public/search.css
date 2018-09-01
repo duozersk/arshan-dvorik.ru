@@ -1,0 +1,259 @@
+.samo_container table.std {
+    border-spacing: 15px;
+    width: 48em !important;
+    ruby-align: expression( runtimeStyle.rubyAlign = 'auto', cellSpacing = 15);
+}
+.samo_container table.std table{
+    width: 100%;
+}
+.samo_container .npp {
+    color: #E4E4E4;
+    font-size: 1.5em !important;
+    padding-left: 0px;
+    padding-right: 20px;
+    text-align: left !important;
+}
+.samo_container select#CURRENCYINC{
+    width: 5em;
+}
+
+
+.samo_container select#TOWNFROMINC, .samo_container select#STATEINC, .samo_container select#OPERATORS, .samo_container select#TOUR{
+    width: 14em;
+}
+
+.samo_container .width_long {
+    width: 20em !important;
+}
+
+.samo_container .show_operator_select, .samo_container .tour_select {
+    display: none;
+}
+
+.samo_container .spin-botton .price{
+    width: 5em !important;
+}
+.samo_container .ctop {
+    padding: 0px 3px 5px 3px;
+}
+.samo_container .ctop .l {
+    color: #2b4379;
+}
+.samo_container .n2 {
+    width: 50%;
+}
+.samo_container .n3 {
+    width: 50%;
+}
+.samo_container .n4 td {
+    border-right: 1px solid #e4e4e4;
+}
+.samo_container .n4 .tdl {
+    border-right: 0px !important;
+/*    padding-top: "0.5em";*/
+}
+.samo_container .div_hotel_param table tbody td {
+    padding-top: 0px;
+}
+.samo_container span.fr_place_l, .samo_container span.fr_place_r{
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    display: table-cell;
+    height: 14px;
+    width: 21px;
+}
+.samo_container span.p2{
+    background-position: -21px 0%;
+}
+.samo_container span.p3{
+    background-position: -42px 0%;
+}
+.samo_container table.res th.w42 {
+    width: 42px;
+}
+.samo_container .price_legend {
+    border-collapse: separate;
+    border-spacing: 3px;
+    margin: auto;
+    display: none;
+}
+#resultset tr.red_row td, .samo_container .stopsale{
+    background-color: #FFAFB6 !important;
+}
+#resultset tr.green_row td, .samo_container .confirm_now{
+    background-color: #A8CFAB !important;
+}
+#search_tour td.price {
+    font-style: italic;
+    color: #666;
+}
+#search_tour span.bron, .samo_container .operator_redirect, .samo_container .next {
+    cursor: pointer;
+    font-weight: bold;
+    color: blue;
+    white-space: nowrap;
+}
+#search_tour span.bron:hover, .samo_container .operator_redirect:hover, .samo_container .next:hover {
+    text-decoration: underline;
+    color: magenta;
+}
+.samo_container table.res span.fr_place_r {
+    background-image: url('f_right.gif');
+}
+.samo_container table.res span.fr_place_l {
+    background-image: url('f_left.gif');
+
+}
+
+.samo_container .div_hotel_param {
+    width: 100%; clear: both;
+}
+
+#search_tour input.hotelsearch {
+    font-size: 11px;
+}
+#HOTELS {
+    width: 32em;
+}
+#TOWNTO {
+    width: 15em;
+}
+#STARS, #MEAL {
+    width: 10em;
+}
+
+.samo_container .show_tour {
+    display: none;
+}
+
+#search_tour select.spin {
+    width: 42px;
+}
+
+#search_tour .n5 label{
+    display: block;
+    float: left;
+    width: 33%;
+}
+
+#search_tour .n5 label input {
+    margin-right: 10px;
+}
+
+.samo_container {
+    display: block !important;
+}
+
+#search_tour table.res th.info {
+    text-align: center;
+    font-weight: bold;
+    color: red;
+}
+
+#search_tour input.price {
+    width: 50px;
+    height: 18px;
+}
+
+#child_ages, #child_ages .age {
+    visibility: hidden;
+    text-align: left;
+}
+
+#child_ages .age {
+    width: 30px;
+}
+
+#search_tour td.panel {
+    vertical-align: top;
+}
+
+#child_ages td.input {
+    text-align: left;
+    padding-left: 8px;
+}
+.samo_container td.c {
+    width: 44px;
+}
+
+#search_tour .crosstour {
+    cursor: pointer;
+}
+
+.samo_container .discount_price {
+    color: green !important;
+    white-space: nowrap;
+}
+
+.samo_container .discount_old {
+    text-decoration: line-through;
+    color: gray;
+    white-space: nowrap;
+}
+
+.samo_container .module_header {
+    font-size: 1.3em;
+    color: gray;
+    padding-left: 30px;
+}
+
+.samo_container #resultset td {
+    background: white;
+}
+
+.samo_container .popup {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 260px;
+    display: none;
+}
+
+#samo_operator_help_hint, #samo_popup_hint {
+    background: white;
+    border: 1px solid gray;
+    box-shadow: 2px 2px 4px gray;
+    padding: 3px;
+    border-radius: 3px;
+}
+
+#samo_popup_hint {
+    text-align: left;
+    padding: 5px;
+}
+
+#samo_operator_help_hint table td {
+    padding: 3px;
+}
+
+.samo_container .help_title {
+    color: #444444;
+    font-weight: bold;
+}
+
+.samo_container .installment_hint {
+    color: #993300;
+    font-weight: bold;
+}
+
+.samo_container a.installment_hint {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.samo_container a.installment_hint:hover {
+    color: #000000;
+    text-decoration: underline;
+}
+
+.samo_container .price_b {
+    background: url('../public/price.gif') no-repeat;
+    width: 16px;
+    height: 15px;
+    font-size: 1px;
+    margin: 0 0 0 7px;
+    vertical-align: middle;
+    text-decoration: none;
+    display: inline-block;
+    padding: 0;
+}

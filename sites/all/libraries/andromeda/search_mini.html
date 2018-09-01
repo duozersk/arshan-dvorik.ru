@@ -1,0 +1,125 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN""http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link rel="stylesheet" href="public/css/search_mini.1.01.css?rev=1403686672" type="text/css"/>
+    <link rel="stylesheet" href="public/css/common.1.01.css?rev=1403686672" type="text/css"/>
+    <link rel="stylesheet" href="public/css/popup.css?rev=1403686672" type="text/css"/>
+    <link rel="stylesheet" href="public/css/tooltip.css?rev=1403686672" type="text/css"/>
+    <link rel="stylesheet" href="public/css/calendar.css?rev=1403686672" type="text/css"/>
+    <link rel="stylesheet" href="public/css/popup.css?rev=1403686672" type="text/css"/>
+    <title>Поиск тура</title>
+</head>
+<body>
+
+<div class="andr_container" data-samo-uid="56544" data-samo-datasource="http://search.samo.ru/search/index.php?" data-samo-datatarget="http://search.samo.ru/search/index.php?action=bronpage&claiminc=" data-samo-mini="1" data-samo-searchurl="./index.html?" id="SAMO_SEARCH">
+
+    <table class="main_tab" cellpadding="0" cellspacing="0">
+        <tr>
+            <td colspan="2" class="header_mini">Выбор тура</td>
+        </tr>
+
+        <tr>
+            <td class="select_mini_l">Откуда</td>
+            <td class="select_mini_r">
+                <div class="slct slct_mini">
+                    <select id="TOWNFROMINC" autocomplete="off" name="TOWNFROMINC">
+                    </select>
+                </div>
+            </td>
+        </tr>
+
+        <tr>
+            <td class="select_mini_l">Куда</td>
+            <td class="select_mini_r">
+                <div class="slct slct_mini">
+                    <select id="STATEINC" autocomplete="off" name="STATEINC">
+                    </select>
+                </div>
+            </td>
+        </tr>
+
+        <tr>
+            <!-- <td colspan="2" class="town_mini">Выбрать город<span class="arrow_mini">&nbsp;</span></td> -->
+            <td class="select_mini_l">Город</td>
+            <td class="select_mini_r">
+                <div class="slct slct_mini">
+                    <select name="TOWNTO" id="TOWNTO" autocomplete="off"></select>
+                </div>
+            </td>
+        </tr>
+
+        <!--Вылет, ночей, взрослых, детей-->
+        <tr>
+            <td colspan="2" class="h_border">
+                <table class="main_tab2" cellpadding="0" cellspacing="0">
+                    <tr>
+                        <td class="description_mini">Вылет</td>
+                        <td><input class="calendar_mini date flight_mini" type="text" maxlength="20" autocomplete="off" placeholder="дд.мм.гггг" data-samo-icon-width="28" data-samo-icon-height="25" id="CHECKIN_BEG" name="CHECKIN_BEG"></td>
+                        <td class="description_mini">Взрослых</td>
+                        <td class="tourists_slct_mini">
+                            <div class="slct">
+                                <select name="ADULT" id="ADULT" autocomplete="off">
+                                </select>
+                             </div>
+                        </td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td class="description_mini">Ночей</td>
+                        <td>
+                            <div class="slct night_slct nights_input">
+                            <select name="NIGHTS_FROM" id="NIGHTS_FROM" autocomplete="off">
+                            </select>
+                        </div>
+
+                        -
+
+                            <div class="slct night_slct nights_input">
+                                <select name="NIGHTS_TILL" id="NIGHTS_TILL" autocomplete="off">
+                                </select>
+                            </div>
+
+                        </td>
+                        <td class="description_mini">Детей</td>
+                        <td class="tourists_slct_mini">
+                            <div class="slct">
+                                <select name="CHILD" id="CHILD" autocomplete="off">
+                                </select>
+                            </div>
+                        </td>
+                        <td></td>
+                    </tr>
+
+                    <!--
+                    <tr>
+                        <td class="price_a_mini" colspan="5">Выбрать цену<span class="arrow_mini">&nbsp;</span></td>
+                    </tr>
+                    -->
+
+                </table>
+            </td>
+        </tr>
+        <!--/Вылет, ночей, взрослых, детей-->
+
+        <tr>
+            <td colspan="2" class="footer_mini">
+                <button class="btn button" id="LOAD">Поиск</button>
+            </td>
+        </tr>
+
+    </table>
+
+
+</div>
+
+<script src="public/js/jquery-1.7.2.min.js?rev=1403686672" charset="utf-8" type="text/javascript"></script>
+<script src="public/js/search.1.01.js?rev=1403686672" charset="utf-8" type="text/javascript"></script>
+<script src="public/js/calendar.js?rev=1403686672" charset="utf-8" type="text/javascript"></script>
+<script src="public/config.js?rev=1403686672" charset="utf-8" type="text/javascript"></script>
+<script src="public/js/tooltip.js?rev=1403686672" charset="utf-8" type="text/javascript"></script>
+<script src="public/js/popup.js?rev=1403686672" charset="utf-8" type="text/javascript"></script>
+
+</body>
+</html>

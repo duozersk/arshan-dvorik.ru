@@ -1,0 +1,103 @@
+/*========== Основные элементы ==========*/
+@charset "utf-8";
+
+#SAMO_SEARCH select, input {
+    padding: 0;
+    margin: 0;
+}
+
+.h_main {
+    margin: 0;
+    padding: 0;
+    width: 880px;
+    height: 90px;
+    border: 0;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.h_main img {
+    padding-right: 5px;
+    vertical-align: -1px;
+}
+
+.h_header {
+    color: #FFFFFF;
+    font-size: 16px;
+    text-align: center;
+    height: 24px;
+    line-height: 24px;
+    background: #f57d26 url("../pict/auth_head_bg.jpg") center repeat-x;
+}
+
+.bgcolor {
+    background: #cccccc;
+}
+
+.h_select_l {
+    padding-right: 10px;
+    text-align: right;
+    height: 40px;
+    width: 70px;
+    color: #444444;
+    font-size: 14px;
+}
+
+.h_select_l1 {
+    text-align: right;
+    height: 40px;
+    width: 70px;
+    color: #444444;
+    font-size: 14px;
+}
+
+.h_select_r {
+    text-align: center;
+    width: 150px;
+    height: 40px;
+    color: #444444;
+}
+
+.h_mini {
+    display: inline-block;
+}
+
+.calendar_mini {
+    background: url(../pict/bg_icons.png) right -1229px no-repeat;
+}
+
+
+.h_flight {
+    width: 96%;
+    padding: 4px 2px;
+    color: #444444;
+    font-size: 14px;
+}
+
+.nights_input {
+    text-align: center;
+    display: inline-block;
+    width: 59px;
+}
+
+.h_town {
+    text-align: center;
+    font-size: 16px;
+    height: 30px;
+    line-height: 30px;
+    color: #999999;
+}
+
+.w35 {
+    width: 40px;
+}
+
+.h_btn {
+    border-left: 1px solid #FFFFFF;
+    margin-top: 10px;
+    text-align: center;
+    vertical-align: middle;
+    background: #f57d26 url(../pict/h_bg.png) 0px 0px no-repeat;
+}
+
+.h_space_10 {width: 10px;}
+

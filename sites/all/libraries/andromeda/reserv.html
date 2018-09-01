@@ -1,0 +1,636 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN""http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link rel="stylesheet" href="public/css/reserv.1.01.css?rev=1403686672" type="text/css"/>
+    <link rel="stylesheet" href="public/css/popup.css?rev=1403686672" type="text/css"/>
+    <title>Просмотр заявок</title>
+
+</head>
+<body>
+
+<div class="andr_container" data-samo-agent="56544" data-samo-datasource="http://search.samo.ru/search/index.php?" id="SAMO_RESERV">
+<!-- ko if: globalErrorOccurred() -->
+<!-- ko template: {name: 'samo_jtmpl_global_error', data: error } -->
+<!-- /ko -->
+<script id="samo_jtmpl_global_error" type="text/x-jquery-tmpl">
+    <table class="error_table">
+        <tr>
+            <td class="error_td1"></td>
+            <td class="error_td2">${error}</span></td>
+        </tr>
+    </table>
+</script>
+<!-- /ko -->
+
+<div id="samo_all" style="display: none;" data-bind="visible: initialized">
+<!-- ko if: initialized() -->
+<!-- ko template: {name: 'samo_jtmpl_header' } -->
+<!-- /ko -->
+<script id="samo_jtmpl_header" type="text/x-jquery-tmpl">
+    <div class="header">
+        <span class="user_name">Здравствуйте, ${buyer.Name}</span> <span class="application">
+                        <span class="middle">
+
+                            {{if claimLoaded()}}
+                                {{if claim.claimDocument()[0].provider}}
+
+
+
+                                    {{if claim.claimDocument()[0].providerNumber}}
+                                       <span>Номер Вашей заявки:</span> ${claim.claimDocument()[0].providerNumber}
+                                    {{/if}}
+                                {{/if}}
+                            {{else}}
+                                <span class="error">${error.error}</span>
+                            {{/if}}
+
+                         </span>
+
+         <!--<span class="clock">Сегодня: ${$root.today()}</span> -->
+
+                        </span>
+        <a href="#"><span class="kabinet" data-bind="click: $root.parent.logout"
+                          style="visibility: {{if !$root.parent.authKey}}visible{{else}}hidden{{/if}}">Выход</span></a>
+        <br>
+    </div>
+</script>
+
+
+
+
+
+<!-- ko if: claimLoaded() -->
+<!-- ko template: {name: 'samo_jtmpl_status', data: claim.claimDocument()[0] } -->
+<!-- /ko -->
+<script id="samo_jtmpl_status" type="text/x-jquery-tmpl">
+
+</script>
+<!-- /ko -->
+
+
+<!-- ko if: claimLoaded() -->
+<!-- ko template: {name: 'samo_jtmpl_support' } -->
+<!-- /ko -->
+<!-- /ko -->
+<script id="samo_jtmpl_support" type="text/x-jquery-tmpl">
+    <div class="header2">
+        <table border="0" cellspacing="0" cellpadding="0">
+            <tr>
+                <td class="head_space">
+                            <span class="leftspan">
+                                {{if claim.claimDocument()[0].provider}}
+                                    {{html claim.claimDocument()[0].provider()[0].supportNote}}
+                                {{/if}}
+                                {{if help.have_instruction}}
+                                    <a href="#" data-bind="click: $root.parent.instruction">Инструкция по поиску и
+                                        бронированию туров<span class="instructions">&nbsp</span></a>
+                                {{/if}}
+                            </span>
+                </td>
+                <td align="right">
+                    {{if claim.claimDocument()[0].provider}}
+                    {{if claim.claimDocument()[0].provider()[0].supportEmail}}<span class="rightspan">email: <a
+                    href="mailto:${claim.claimDocument()[0].provider()[0].supportEmail}">${claim.claimDocument()[0].provider()[0].supportEmail}</a></span>{{/if}}
+                    {{if claim.claimDocument()[0].provider()[0].supportPhone}}<span class="rightspan">телефон: ${claim.claimDocument()[0].provider()[0].supportPhone}</span>{{/if}}
+                    {{if claim.claimDocument()[0].provider()[0].supportWww}}<span class="rightspan">сайт: <a
+                    href="${claim.claimDocument()[0].provider()[0].supportWww}" target="_blank">${claim.claimDocument()[0].provider()[0].supportWww}</a></span>{{/if}}
+                    {{/if}}
+                </td>
+            </tr>
+        </table>
+    </div>
+</script>
+
+
+<!-- ko if: listLoaded() -->
+<div id="samo_list" data-bind="visible: listLoaded">
+    <table class="samo_list" border="0" cellspacing="0" cellpadding="0">
+        <thead>
+        <tr class="application_header">
+            <th>Номер заявки</th>
+            <th>Создана</th>
+            <th>Направление</th>
+        </tr>
+        </thead>
+        <tbody>
+        <!-- ko template: {name: 'samo_jtmpl_list', foreach: list } -->
+        <!-- /ko -->
+        <script id="samo_jtmpl_list" type="text/x-jquery-tmpl">
+            <tr data-bind="click: $root.parent.loadClaim"
+                class="clickable {{if $index() % 2}}application_tr1{{else}}application_tr2{{/if}} {{if $root.parent.claimInc == inc()}} active_claim {{/if}}"
+            {{if $root.parent.claimInc == inc()}} title="Текущая заявка" {{/if}}>
+            <td>{{if providerNumber}}${providerNumber}{{else}}&mdash;{{/if}}</td>
+            <td>{{if cdate}}${$root.dateFormat(cdate(), true)}{{else}}&mdash;{{/if}}</td>
+            <td>{{if townfrom}}${townfrom}{{if state}} &gt;&gt;&gt;{{/if}}{{/if}} {{if state}}${state}{{/if}}</td>
+            </tr>
+        </script>
+        </tbody>
+    </table>
+</div>
+<!-- /ko -->
+
+
+
+<!-- ko if: docsLoaded() -->
+<div id="samo_doc_list">
+    <table class="samo_list2" border="0" cellspacing="0" cellpadding="0">
+        <thead>
+        <tr class="application_header2">
+            <th>Список документов</th>
+            <th></th>
+            <th></th>
+        </tr>
+        </thead>
+        <tbody>
+        <!-- ko template: {name: 'samo_jtmpl_doc_list', foreach: docs } -->
+        <!-- /ko -->
+        <script id="samo_jtmpl_doc_list" type="text/x-jquery-tmpl">
+            <tr class="clickable {{if $index() % 2}}application2_tr1{{else}}application2_tr2{{/if}}"
+                data-bind="click: $root.parent.showDocument">
+                <td class="allign_left">{{if name}}{{html name}}{{else}}{{/if}}</td>
+                <td class="td">{{if type}}{{html type}}{{/if}}</td>
+                <td width="150"><a href="#"><span class="link">Распечатать</span></a></td>
+            </tr>
+        </script>
+        </tbody>
+    </table>
+    <br><br>
+</div>
+<!-- /ko -->
+
+
+<div id="samo_claim" style="display: none;" data-bind="visible: claimLoaded">
+
+<!-- ko if: claimLoaded() -->
+
+<!--vvvvvvvvvv Общая информация  vvvvvvvvvvv-->
+<!-- ko template: {name: 'samo_jtmpl_main_info', data: claim.claimDocument()[0] } -->
+<!-- /ko -->
+<script id="samo_jtmpl_main_info" type="text/x-jquery-tmpl">
+    <div class="upper_shadow"></div>
+
+
+    <div class="white_bg">
+
+
+            {{if typeof agency != 'undefined' && agency() && agency()[0]}}
+                <div class="samo_agency_info">
+
+                    <h2 class="category">{{if agency()[0].name}}${agency()[0].name}{{else}}Турагентство{{/if}}</h2>
+
+
+                    {{if agency()[0].phone}}
+                        <div class="samo_agency_info_element">
+                            <span class="samo_agency_info_title">Телефон для связи:</span> ${agency()[0].phone}
+                        </div>
+                    {{/if}}
+
+                    {{if agency()[0].address || agency()[0].town || agency()[0].metro}}
+                        <div class="samo_agency_info_element">
+                            <span class="samo_agency_info_title">Адрес:</span>
+                            {{if agency()[0].town}}
+                                г. ${agency()[0].town}
+                            {{/if}}
+
+                            {{if agency()[0].metro}}
+                                {{if agency()[0].town}}, {{/if}}
+                                м. ${agency()[0].metro}
+                            {{/if}}
+
+                            {{if agency()[0].address}}
+                                {{if agency()[0].town || agency()[0].metro}}, {{/if}}
+                                ${agency()[0].address}
+                            {{/if}}
+                        </div>
+                    {{/if}}
+
+                    {{if agency()[0].email}}
+                        <div class="samo_agency_info_element">
+                            <span class="samo_agency_info_title">E-mail:</span> <a href="mailto:${agency()[0].email}">${agency()[0].email}</a>
+                        </div>
+                    {{/if}}
+
+                    {{if agency()[0].www}}
+                        <div class="samo_agency_info_element">
+                            <span class="samo_agency_info_title">Web:</span> <a href="${agency()[0].www}" target="_blank">${agency()[0].www}</a>
+                        </div>
+                    {{/if}}
+
+                    {{if agency()[0].office}}
+
+                        <h2 class="category">{{if agency()[0].office()[0].name}}${agency()[0].office()[0].name}{{else}}Офис оплаты{{/if}}</h2>
+
+                        {{if agency()[0].office()[0].metro || agency()[0].office()[0].town || agency()[0].office()[0].address}}
+                            <div class="samo_agency_info_element">
+                                <span class="samo_agency_info_title">Адрес:</span>
+                                    {{if agency()[0].office()[0].town}}
+                                        г. ${agency()[0].office()[0].town}
+                                    {{/if}}
+
+                                    {{if agency()[0].office()[0].metro}}
+                                        {{if agency()[0].office()[0].town}}, {{/if}}
+                                        м. ${agency()[0].office()[0].metro}
+                                    {{/if}}
+
+                                    {{if agency()[0].office()[0].address}}
+                                        {{if agency()[0].office()[0].town || agency()[0].office()[0].metro}}, {{/if}}
+                                        ${agency()[0].office()[0].address}
+                                    {{/if}}
+                            </div>
+                        {{/if}}
+
+                        {{if agency()[0].office()[0].phone}}
+                            <div class="samo_agency_info_element">
+                                <span class="samo_agency_info_title">Телефон:</span> ${agency()[0].office()[0].phone}
+                            </div>
+                        {{/if}}
+
+                    {{/if}}
+
+                    <br>
+                </div>
+            {{/if}}
+        <table class="main_info" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+                <td  class="category" colspan="2"><span class="application_data">&nbsp;</span> Данные о заявке</td>
+
+                <td  class="devide"></td>
+
+                <td  class="category" colspan="2"><span class="information_data">&nbsp;</span>Информация о туре</td>
+
+                <td  class="devide"></td>
+
+                <td  class="category" colspan="2"><span class="user_data">&nbsp;</span>Личные данные заказчика</td>
+            </tr>
+
+            <tr>
+                <td class="information_1">№ Заявки</td>
+                <td class="information_2">{{if providerNumber}}${providerNumber}{{else}}&mdash;{{/if}}</td>
+                <td class="devide"></td>
+                <td class="information_1">Туроператор</td>
+                <td class="information_2">{{if provider}}{{if provider()[0].name}}${provider()[0].name}{{else}}&mdash;{{/if}}{{else}}&mdash;{{/if}}</td>
+                <td class="devide"></td>
+                <td class="information_1">Ф.И.О.</td>
+                <td class="information_2">{{if buyer}}${buyer()[0].name}{{else}}&mdash;{{/if}}</td>
+            </tr>
+
+            <tr>
+                <td class="information_1">Дата создания</td>
+                <td class="information_2">{{if cdate}}${$root.dateFormat(cdate(), true, true)}{{else}}&mdash;{{/if}}
+                </td>
+                <td class="devide"></td>
+                <td class="information_1">Направление</td>
+                <td class="information_2">
+                    {{if townFrom}}${townFrom} {{if state}}&gt;&gt;&gt;{{/if}}{{/if}} {{if state}}${state}{{/if}}
+                </td>
+                <td class="devide"></td>
+                <td class="information_1">Паспорт</td>
+                <td class="information_2 td_width">
+                    {{if buyer}}
+                    {{if buyer()[0].pserie}}
+                    Сер: ${buyer()[0].pserie}
+                    {{/if}}
+                    {{if buyer()[0].pnumber}}
+                    №${buyer()[0].pnumber}
+                    {{/if}}
+                    {{if buyer()[0].pgiven || buyer()[0].pgivenorg}}
+                    Выдан:
+                    {{if buyer()[0].pgiven}}
+                    ${$root.dateFormat(buyer()[0].pgiven())}
+                    {{/if}}
+                    {{if buyer()[0].pgivenorg}}
+                    ${buyer()[0].pgivenorg}
+                    {{/if}}
+                    {{/if}}
+                    {{else}}
+                    &mdash;
+                    {{/if}}
+                </td>
+            </tr>
+
+            <tr>
+                <!--
+                   <td class="information_1">Стоимость</td>
+                <td class="information_2">{{if buyerMoneys}}<span class="tour_price">${buyerMoneys()[0].buyerClaimMoney()[0].net}
+                                        ${buyerMoneys()[0].buyerClaimMoney()[0].currency}</span>{{else}}&mdash;{{/if}}
+                </td>
+                -->
+
+
+                <td class="information_1">Оплачено</td>
+                <td class="information_2">
+                    {{if buyerMoneys}}
+                    {{if buyerMoneys()[0].buyerClaimMoney()[0]._paid}}
+                    <strong>${buyerMoneys()[0].buyerClaimMoney()[0]._paid}
+                        ${buyerMoneys()[0].buyerClaimMoney()[0]._paidCurrency}</strong>
+                    {{else}}
+                    <span class="zero">0 RUB</span>
+                    {{/if}}
+                    {{else}}
+                    <span class="zero">0 RUB</span>
+                    {{/if}}
+                </td>
+
+
+                <td class="devide"></td>
+                <td class="information_1">Заезд</td>
+                <td class="information_2">{{if datebeg}}${$root.dateFormat(datebeg(), false, true)}{{/if}} {{if
+                    datebeg}}{{if
+                    dateend}}&ndash;{{/if}}{{/if}} {{if dateend}}${$root.dateFormat(dateend(), false, true)}{{/if}}
+                </td>
+                <td class="devide"></td>
+                <td class="information_1">Адрес</td>
+                <td class="information_2">{{if buyer}}{{if buyer()[0].address}}${buyer()[0].address}{{else}}&mdash;{{/if}}{{else}}&mdash;{{/if}}</td>
+            </tr>
+
+            <tr>
+                <td class="information_1">Статус</td>
+                <td class="information_2">{{html $root.lang('claim_main_info_status', mainInfoStatus() + '_short')}}
+                </td>
+                <td class="devide"></td>
+                <td class="information_1">Примечание</td>
+                <td class="information_2">{{if note}}{{if note()[0]._}}${note()[0]._}{{else}}&mdash;{{/if}}{{else}}&mdash;{{/if}}</td>
+                <td class="devide"></td>
+                <td class="information_1">Телефон</td>
+                <td class="information_2">{{if buyer}}{{if buyer()[0].phone}}${buyer()[0].phone}{{else}}&mdash;{{/if}}{{else}}&mdash;{{/if}}</td>
+            </tr>
+
+            <tr>
+                <td class="information_1"> </td>
+                <td class="information_2"> </td>
+
+                <td class="devide"></td>
+                <td class="information_1">&nbsp;</td>
+                <td class="information_2">&nbsp;</td>
+                <td class="devide"></td>
+                <td class="information_1">E-mail</td>
+                <td class="information_2">{{if buyer}}{{if buyer()[0].email}}${buyer()[0].email}{{else}}&mdash;{{/if}}{{else}}&mdash;{{/if}}</td>
+            </tr>
+
+
+
+        </table>
+
+
+    </div>
+
+
+    <div class="lower_shadow"></div>
+
+    <div class="price">
+
+        <div class="header5">
+            {{html $root.lang('claim_main_info_status', mainInfoStatus())}}
+        </div>
+        {{if buyerMoneys}}
+            Стоимость:
+            <strong>${buyerMoneys()[0].buyerClaimMoney()[0].net} ${buyerMoneys()[0].buyerClaimMoney()[0].currency} </strong> <button id="samo_pays_btn" data-bind="visible: $root.showPayVariants, click: $root.parent.loadPayVariants">Оплатить заявку</button>
+            <br>
+        {{/if}}
+    </button>
+
+        <span class="small_docs">&nbsp</span><a href="#" id="samo_list_btn" data-bind="click: $root.parent.loadList">Показать все заявки</a>        <span class="small_docs">&nbsp</span><span class="documents"><a href="#" id="samo_documents_btn" data-bind="click: $root.parent.loadDocList">Показать документы</a></span>
+
+    </div>
+
+</script>
+<!--^^^^^^^^^^ Общая информация ^^^^^^^^^^-->
+<!-- /ko -->
+
+
+<!-- ko if: paysLoaded() -->
+<div id="samo_pay_list">
+    <br>
+    <table class="payment" border="0" cellspacing="0" cellpadding="0">
+        <thead>
+        <tr class="payment_head">
+            <th></th>
+            <th>Способы оплаты</th>
+            <th></th>
+            <th></th>
+        </tr>
+        </thead>
+        <tbody>
+        <!-- ko template: {name: 'samo_jtmpl_pay_list', foreach: pays } -->
+        <!-- /ko -->
+        <script id="samo_jtmpl_pay_list" type="text/x-jquery-tmpl">
+            <tr class="{{if $data.url || $data.form}}clickable_pay{{/if}} payment_tr {{if name}}bordered_top{{/if}} {{if $index() == $root.pays().length-1}}bordered_bottom{{/if}}"
+                data-bind="click: $root.showPayForm">
+                <td class="logo">{{if logo}}<img src="${logo}">{{/if}}</td>
+                <td class="company_name">{{if name}}{{html name}}{{else}}{{/if}}</td>
+                <td class="description v_line"
+                {{if !$data.url && !$data.form}}colspan="2"{{/if}}>{{if description}}{{html description}}{{/if}}</td>
+                {{if $data.url || $data.form}}
+                <td>
+                    <button class="pay_btn">ОПЛАТИТЬ</button>
+                </td>
+                {{/if}}
+            </tr>
+        </script>
+        </tbody>
+    </table>
+</div>
+<!-- /ko -->
+
+<!-- ko if: claimLoaded() && claim.claimDocument()[0].peoples && claim.claimDocument()[0].peoples()[0].people -->
+<!--vvvvvvvvvv Информация о туристах vvvvvvvvvvv-->
+<div class="upper_shadow"></div>
+<div class="white_bg">
+    <div class="category"><span class="tourists_data">&nbsp;</span>Информация о туристах</div>
+
+    <table class="tourist_info" cellspacing="0" cellpadding="0">
+        <tr class="tourist_info_tr1">
+            <td class="tourist_info_td1">Ф.И.О.</td>
+            <td>Возраст</td>
+            <td>Пол</td>
+            <td>Дата рождения</td>
+            <td>Паспортные данные</td>
+        </tr>
+        <!-- ko template: { name: 'samo_jtmpl_people_list', foreach: claim.claimDocument()[0].peoples()[0].people} -->
+        <!-- /ko -->
+        <script id="samo_jtmpl_people_list" type="text/x-jquery-tmpl">
+            <tr
+            {{if $index() % 2}}class="tourist_info_tr2"{{else}}{{/if}}>
+            <td>{{if $data.lname}}${$data.lname}{{else}}${$data.name}{{/if}}</td>
+            <td>{{if age}}${$root.lang('people_age', age())}{{else}}&mdash;{{/if}}</td>
+            <td>{{if sex}}${$root.lang('people_sex', sex())}{{else}}&mdash;{{/if}}</td>
+            <td>{{if born}}${$root.dateFormat(born(), false, true)}{{else}}&mdash;{{/if}}</td>
+            <td>{{if pserie}}Сер: ${pserie}{{/if}} {{if pnumber}}№: ${pnumber}{{/if}} {{if pgiven}}Выдан:
+                ${$root.dateFormat(pgiven())}{{/if}} {{if pgivenorg}}${pgivenorg}{{/if}} {{if pexpire}}до
+                ${$root.dateFormat(pexpire())}{{/if}}
+            </td>
+            </tr>
+        </script>
+    </table>
+
+</div>
+<div class="lower_shadow"></div>
+<!--^^^^^^^^^^ Информация о туристах ^^^^^^^^^^-->
+<!-- /ko -->
+
+
+<!-- ko if: claimLoaded() && claim.claimDocument()[0].hotels && claim.claimDocument()[0].hotels()[0].hotel -->
+<!--vvvvvvvvvv Информация о проживании vvvvvvvvvvv-->
+<div class="upper_shadow"></div>
+<div class="white_bg">
+    <div class="category"><span class="hotel_data">&nbsp;</span>Проживание</div>
+
+    <table class="hotel_info" cellspacing="0" cellpadding="0">
+        <tr class="hotel_info_tr1">
+            <td>Отель</td>
+            <td>Расположение</td>
+            <td>Заезд</td>
+            <td>Номер</td>
+            <td>Размещение</td>
+            <td>Питание</td>
+        </tr>
+        <!-- ko template: { name: 'samo_jtmpl_hotel_list', foreach: claim.claimDocument()[0].hotels()[0].hotel } -->
+        <!-- /ko -->
+        <script id="samo_jtmpl_hotel_list" type="text/x-jquery-tmpl">
+            <tr
+            {{if $index() % 2}}class="hotel_info_tr1"{{else}}{{/if}}>
+            <td>{{if name}}${name}{{else}}&mdash;{{/if}}</td>
+            <td>{{if state}}${state}{{if town}},{{/if}}{{/if}} {{if town}}${town}{{else}}&mdash;{{/if}}</td>
+            <td>{{if datebeg}}${$root.dateFormat(datebeg(), false, true)}{{/if}} {{if datebeg}}{{if dateend}}&ndash;{{/if}}{{/if}}
+                {{if dateend}}${$root.dateFormat(dateend(), false, true)}{{/if}}
+            </td>
+            <td>${room}</td>
+            <td>${htplace}</td>
+            <td>${meal}</td>
+            </tr>
+        </script>
+
+    </table>
+</div>
+<div class="lower_shadow"></div>
+<!--^^^^^^^^^^ Информация о проживании ^^^^^^^^^^^-->
+<!-- /ko -->
+
+
+<!-- ko if: claimLoaded() && claim.claimDocument()[0].transports && claim.claimDocument()[0].transports()[0] && claim.claimDocument()[0].transports()[0].transport -->
+<!--vvvvvvvvvv Информация о транспорте vvvvvvvvvvv-->
+<div class="upper_shadow"></div>
+<div class="white_bg">
+    <div class="category"><span class="transport_data">&nbsp;</span>Транспорт</div>
+
+    <table class="transport_info" cellspacing="0" cellpadding="0">
+        <tr class="transport_info_tr1">
+            <td>Наименование</td>
+            <td>Класс</td>
+            <td>Отправление</td>
+            <td>Прибытие</td>
+
+        </tr>
+        <!-- ko template: { name: 'samo_jtmpl_transport_list', foreach: claim.claimDocument()[0].transports()[0].transport } -->
+        <!-- /ko -->
+        <script id="samo_jtmpl_transport_list" type="text/x-jquery-tmpl">
+            <tr
+            {{if $index() % 2}}class="transport_info_tr1"{{else}}{{/if}}>
+            <td>{{if name}}${name}{{else}}&mdash;{{/if}}</td>
+            <td>{{if $data['class']}}${$data['class']}{{else}}&mdash;{{/if}}</td>
+            <td>
+                {{if departure()[0].state}}
+                ${departure()[0].state}{{if departure()[0].town}},{{/if}}
+                {{/if}}
+                {{if departure()[0].town}}
+                ${departure()[0].town}
+                {{/if}}
+                {{if departure()[0].port}}
+                (${departure()[0].port})
+                {{/if}}
+                {{if datebeg}}
+                ${$root.dateFormat(datebeg(), false, true)}
+                {{/if}}
+                {{if departure()[0].time}}
+                ${departure()[0].time}
+                {{/if}}
+            </td>
+            <td>
+                {{if arrival()[0].state}}
+                ${arrival()[0].state}{{if arrival()[0].town}},{{/if}}
+                {{/if}}
+                {{if arrival()[0].town}}
+                ${arrival()[0].town}
+                {{/if}}
+                {{if arrival()[0].port}}
+                (${arrival()[0].port})
+                {{/if}}
+                {{if dateend}}
+                ${$root.dateFormat(dateend(), false, true)}
+                {{/if}}
+                {{if arrival()[0].time}}
+                ${arrival()[0].time}
+                {{/if}}
+            </td>
+            </tr>
+        </script>
+    </table>
+</div>
+<div class="lower_shadow"></div>
+<!--^^^^^^^^^^ Информация о транспорте ^^^^^^^^^^^-->
+<!-- /ko -->
+
+
+<!-- ko if: claimLoaded() && claim.claimDocument()[0].services && claim.claimDocument()[0].services()[0] && claim.claimDocument()[0].services()[0].service -->
+<!--vvvvvvvvvv Информация об услугах vvvvvvvvvvv-->
+<div class="upper_shadow"></div>
+<div class="white_bg">
+    <div class="category"><span class="services_data">&nbsp;</span>Дополнительные услуги</div>
+
+    <table class="service_info" cellspacing="0" cellpadding="0">
+        <tr class="service_info_tr1">
+            <td>Тип</td>
+            <td>Наименование</td>
+            <td>Дата</td>
+        </tr>
+
+        <!-- ko template: { name: 'samo_jtmpl_service_list', foreach: claim.claimDocument()[0].services()[0].service } -->
+        <!-- /ko -->
+        <script id="samo_jtmpl_service_list" type="text/x-jquery-tmpl">
+            <tr
+            {{if $index() % 2}}class="service_info_tr1"{{else}}{{/if}}>
+            <td>{{if type}}${$root.lang('service_type', type())}{{else}}&mdash;{{/if}}</td>
+            <td>{{if name}}${name}{{else}}&mdash;{{/if}}
+            </td>
+            <td>{{if datebeg}}${$root.dateFormat(datebeg(), false, true)}{{/if}} {{if datebeg}}{{if dateend}}&ndash;{{/if}}{{/if}}
+                {{if dateend}}${$root.dateFormat(dateend(), false, true)}{{/if}}
+            </td>
+            </tr>
+
+        </script>
+    </table>
+
+
+</div>
+<div class="lower_shadow"></div>
+<!--^^^^^^^^^^ Информация об услугах ^^^^^^^^^^^-->
+<!-- /ko -->
+
+<!-- ko if: claimLoaded() -->
+<!-- ko template: {name: 'samo_jtmpl_status', data: claim.claimDocument()[0]} -->
+<!-- /ko -->
+<!-- /ko -->
+
+<!-- ko if: claimLoaded() -->
+<!-- ko template: {name: 'samo_jtmpl_support' } -->
+<!-- /ko -->
+<!-- /ko -->
+
+</div>
+<!-- /ko -->
+</div>
+</div>
+
+
+<script src="public/js/jquery-1.7.2.min.js?rev=1403686672" charset="utf-8" type="text/javascript"></script>
+<script src="public/js/reserv.1.01.js?rev=1403686672" charset="utf-8" type="text/javascript"></script>
+<script src="public/config.js?rev=1403686672" charset="utf-8" type="text/javascript"></script>
+<script src="public/js/popup.js?rev=1403686672" charset="utf-8" type="text/javascript"></script>
+<script src="public/js/jquery.tmpl.min.js?rev=1403686672" charset="utf-8" type="text/javascript"></script>
+<script src="public/js/knockout-2.1.0.js?rev=1403686672" charset="utf-8" type="text/javascript"></script>
+<script src="public/js/knockout.mapping-latest.min.js?rev=1403686672" charset="utf-8"
+        type="text/javascript"></script>
+
+</body>
+</html>

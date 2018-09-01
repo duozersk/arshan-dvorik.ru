@@ -1,0 +1,211 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Поиск тура</title>
+<link rel="stylesheet" href="public/common.css" type="text/css" >
+<link rel="stylesheet" href="public/search.css" type="text/css" >
+<link rel="stylesheet" href="public/instruction.css" type="text/css" >
+    </head>
+<body>
+<div class="samo_container">
+<div id="search_tour" samo:uid="56544" samo:datasrc="http://search.samo.ru/search/index.php?" samo:datatrg="http://search.samo.ru/search/index.php?action=broninfo&">
+
+<div id="samo_operator_help_hint" class="popup">
+    <table width="100%"><tr><td colspan="2" align="center" class="help_title">Служба поддержки <span class="help_operator_name"></span>:</td></tr>
+        <tr>
+            <td class="bold help_phone_title">Телефон:</td><td class="help_phone"></td>
+        </tr>
+        <tr>
+            <td class="bold help_email_title">E-mail:</td><td class="help_email"></td>
+        </tr>
+    </table>
+</div>
+<div id="samo_popup_hint" class="popup">
+</div>
+
+    <table class="std container">
+        <tr>
+            <td class="module_header">
+                            </td>
+            <td align="right">
+                <span class="samo_instruction_link"><img src="public/instruction.png" align="absmiddle" hspace="5">Инструкция по поиску и бронированию туров</span>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" class="panel">
+                <table>
+                    <tr>
+                        <td width="5%" rowspan="2" class="npp">1</td>
+                        <td width="20%">Город отправления</td>
+                        <td width="32%"><select name="TOWNFROMINC" id="TOWNFROMINC"  autocomplete="off" ></select></td>
+                        <td>Страна назначения</td>
+                        <td><select name="STATEINC"  id="STATEINC"  autocomplete="off" ></select></td>
+                        <td class="show_operator_select">Туроператор</td>
+                        <td class="show_operator_select">
+                            <select name="OPERATORS" id="OPERATORS" autocomplete="off">
+                            </select>
+                        </td>
+                        <td class="tour_select">Тур</td>
+                        <td class="tour_select">
+                            <select name="TOUR" id="TOUR" autocomplete="off">
+                            </select>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td width="50%" class="panel n2">
+                <table>
+                    <tr>
+                        <td rowspan="2" class="npp">2</td>
+                        <td width="30%">Вылет от</td>
+                        <td><input type="text" name="CHECKIN_BEG" class="date" id="CHECKIN_BEG"  autocomplete="off" value="" /></td>
+                        <td width="30%">Ночей от</td>
+                        <td><select name="NIGHTS_FROM" id="NIGHTS_FROM" class="spin"  autocomplete="off"><option value="1" >1</option><option value="2" >2</option><option value="3" >3</option><option value="4" >4</option><option value="5" >5</option><option value="6" >6</option><option value="7" >7</option><option value="8" >8</option><option value="9" >9</option><option value="10" >10</option><option value="11" >11</option><option value="12" >12</option><option value="13" >13</option><option value="14" >14</option><option value="15" >15</option><option value="16" >16</option><option value="17" >17</option><option value="18" >18</option><option value="19" >19</option><option value="20" >20</option><option value="21" >21</option><option value="22" >22</option><option value="23" >23</option><option value="24" >24</option><option value="25" >25</option><option value="26" >26</option><option value="27" >27</option><option value="28" >28</option><option value="29" >29</option></select></td>
+                    </tr>
+                    <tr>
+                        <td>Вылет до</td>
+                        <td><input type="text" class="date" id="CHECKIN_END" autocomplete="off" value="" /></td>
+                        <td style="padding-bottom: 5px;">Ночей до</td>
+                        <td><select name="NIGHTS_TILL" id="NIGHTS_TILL" class="spin"  autocomplete="off" ><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option><option value="21">21</option><option value="22">22</option><option value="23">23</option><option value="24">24</option><option value="25">25</option><option value="26">26</option><option value="27">27</option><option value="28">28</option><option value="29">29</option></select></td>
+                    </tr>
+                </table>
+            </td>
+            <td class="panel n2">
+                <table>
+                    <tr>
+                        <td width="5%" rowspan="2" class="npp">3</td>
+                        <td width="20%" style="padding-bottom: 5px;">Взрослых</td>
+                        <td width="15%"><select name="ADULT" class="spin" id="ADULT" autocomplete="off"><option value="1" >1</option><option value="2" >2</option><option value="3" >3</option><option value="4" >4</option><option value="5" >5</option><option value="6" >6</option><option value="7" >7</option><option value="8" >8</option><option value="9" >9</option></select></td>
+                        <td width="50%"><span class="currency_label">Цена</span>&nbsp;&nbsp;<select id="CURRENCYINC" name="CURRENCY"  autocomplete="off" ></select></td>
+                        <td width="10%"> от <input type="text" id="COSTMIN" name="COSTMAX" value="" class="price" autocomplete="off"></td>
+                    </tr>
+                    <tr>
+                        <td style="padding-bottom: 5px;">Детей</td>
+                        <td>
+                            <select name="CHILD" class="spin"  id="CHILD" autocomplete="off" ><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option></select>
+                        </td>
+                        <td id="child_ages"><span>Возраст</span>&nbsp;&nbsp;<input type="text" maxlength="2" class="age" id="age_1" autocomplete="off" name="AGE1">&nbsp;<input type="text" maxlength="2" class="age" id="age_2" autocomplete="off" name="AGE2">&nbsp;<input maxlength="2"  type="text" class="age" id="age_3" autocomplete="off" name="AGE3"></td>
+                        <td> до <input type="text" id="COSTMAX" name="COSTMAX"  autocomplete="off" value=""  class="price"></td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+		<tr>
+            <td class="panel n5" colspan="2">
+                <table>
+                    <tbody>
+                     <tr>
+                        <td class="npp" rowspan="2">4</td>
+                        <td style="text-align:center;">
+							<input type="radio" name="PACKETTYPE" value="0"> Пакетный тур
+							<input type="radio" name="PACKETTYPE" value="1" style="margin-left:20px;"> Только проживание
+							<!-- <input type="radio" name="PACKETTYPE" value="1" style="margin-left:20px;"> Только авиабилет -->
+						</td>                      
+                     </tr>
+                    </tbody>
+               </table>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" class="panel n4">
+                <div class="div_hotel_param" id="HOTELSCONTAINER">
+                    <table style="clear: both;">
+                        <thead>
+                            <tr>
+                                <td class="l tdl">Город</td>
+                                <td><label><input type="checkbox" name="TOWNTO_ANY" id="TOWNTO_ANY" checked="checked">любой</label></td>
+                                <td class="l tdl">Категория</td>
+                                <td><label><input type="checkbox" name="STARS_ANY" id="STARS_ANY" checked="checked">любая</label></td>
+                                <td class="l tdl">Гостиница <input type="text" name="hotelsearch"  autocomplete="off" id="hotelsearch"> <label><input type="checkbox" name="HOTELS_SEL" id="HOTELS_SEL"  autocomplete="off"> выбранные</label></td>
+                                <td><label><input type="checkbox" name="HOTELS_ANY" id="HOTELS_ANY" checked="checked">любая</label></td>
+                                <td class="l tdl">Питание</td>
+                                <td class="tdl"><label><input type="checkbox" name="MEAL_ANY" id="MEAL_ANY" checked="checked">любое</label></td>
+                            </tr>
+                        </thead>
+                        <tr>
+                            <td width="25%" colspan="2"><div class="checklistbox" id="TOWNTO" name="TOWNTO"></div></td>
+                            <td width="10%" colspan="2"><div class="checklistbox" id="STARS" name="STARS"></div></td>
+                            <td width="50%" colspan="2"><div class="checklistbox" id="HOTELS" name="HOTELS"></div></td>
+                            <td width="15%" colspan="2" class="tdl"><div class="checklistbox" id="MEAL" name="MEAL"></div></td>
+                        </tr>
+                    </table>
+                </div>
+		<table>
+			<tr>
+			  <td style="border: none"><label><input type="checkbox" id="FREIGHT" name="FREIGHT"  autocomplete="off" checked="checked"> есть места на рейсы </label></td>
+			  <td style="border: none"><label><input type="checkbox" id="STOPSALE" name="STOPSALE"  autocomplete="off" checked="checked" > нет остановки продаж</label></td>
+			  <td width="30%" class="r"><button id="load" disabled="disabled">Найти</button></td>
+			</tr>
+		</table>
+            </td>
+        </tr>
+    </table>
+    <table class="price_legend">
+        <tr>
+            <td width="63px"><img src="public/f_right.gif"></td>
+            <td> - места на рейсы (есть/нет/по запросу)</td>
+        <tr>
+            <td class="confirm_now"></td>
+            <td> - мгновенное подтверждение</td>
+        </tr>
+        <tr>
+            <td class="stopsale"></td>
+            <td> - остановка продаж</td>
+        </tr>
+    </table>
+    <div id="resultset">
+	<script type="text/html" id="result-template">
+	    <table class="res">
+		<thead><tr>
+		    <th>Вылет</th>
+		    <th class="show_tour">Тур</th>
+		    <th>Гостиница</th>
+		    <th>Ночей</th>
+		    <th>Питание</th>
+		    <th>Номер/Размещение</th>
+		    <th>Цена</th>
+		    <th class="show_installment">В рассрочку</th>
+		    <th class="show_to">Туроператор</th>
+		    <th>Эконом</th>
+		    <th>Бизнес</th>
+		</tr></thead>
+		<tbody>
+		<tr id="eachrow">
+		    <td>{%checkin%}{%departureTimes%}</td>
+		    <td class="show_tour">{%tour%} {%program%}</td>
+		    <td>{%hotel%} (<a href="{%townUrl%}" class="town_url" target="_blank">{%town%}</a>)</td>
+		    <td>{%nights%}</td>
+		    <td>{%meal%}</td>
+		    <td>{%room%} / {%htplace%}</td>
+		    <td class="cost">{%price%} {%currency%}</td>
+            <td class="show_installment" align="center">{%installment%}</td>
+		    <td class="operator_help show_to" samo:inc="{%touroperatorInc%}">{%touroperator%}</td>
+		    <td nowrap="nowrap">{%econom%}</td>
+		    <td nowrap="nowrap">{%business%}</td>
+		</tr>
+		</tbody>
+	    </table>
+	</script>
+<!--	без туроператора, размещение и номер в разных колонках
+<script type="text/html" id="result-template">
+<table class="res">
+<thead><tr>             <th>Вылет</th>      <th>Гостиница</th>           <th>Ночей</th>     <th>Питание</th><th>Номер</th>    <th>Размещение</th> <th>Цена</th>                               <th>Эконом</th>    <th>Бизнес</th>      </tr></thead>
+<tbody><tr id="eachrow"><td>{%checkin%}</td><td>{%hotel%} ({%town%})</td><td>{%nights%}</td><td>{%meal%}</td><td>{%room%}</th><td>{%htplace%}</td><td class="cost">{%price%} {%currency%}</td><td>{%econom%}</td><td>{%business%}</td></tr></tbody>
+</table>
+</script>
+-->
+	<script type="text/html" id="notfound-template">
+	    <h4>По указанным критериям ничего не найдено</h4>
+	</script>
+                    </div>
+</div>
+</div>
+<script src="public/jquery-1.4.2.min.js" charset="utf-8"  type="text/javascript"></script>
+<script src="public/calendar.js" charset="utf-8" type="text/javascript"></script>
+<script src="public/search.js" charset="utf-8" type="text/javascript"></script>
+<script src="public/config.js" charset="utf-8" type="text/javascript"></script>
+<script src="public/instruction.js" charset="utf-8" type="text/javascript"></script>
+</body>
+</html>

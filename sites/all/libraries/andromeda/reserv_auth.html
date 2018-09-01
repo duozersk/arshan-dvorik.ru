@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN""http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link rel="stylesheet" href="public/css/reserv_auth.1.01.css?rev=1403686672" type="text/css"/>
+    <title>Просмотр заявок</title>
+</head>
+<body>
+<div class="andr_container" data-samo-agent="56544" data-samo-datasource="http://search.samo.ru/search/index.php?" data-samo-auth="1"  id="SAMO_RESERV">
+
+    <form onsubmit="return false;">
+    <div class="main_frame">
+        <div class="head">Просмотр заявок</div>
+
+        <div class="lock"></div>
+
+        <div class="fields">
+            <label>E-mail <input class="user_name" type="text" id="samo_auth_email"> </label>
+
+            <label>Пароль <input class="pass" type="password" id="samo_auth_psw"> </label>
+
+            <div class="recover"><a href="#" data-bind="click: $root.parent.forgotPassword">Забыли пароль?</a></div>
+
+        </div>
+
+
+        <button class="enter_btn" type="submit" data-bind="click: $root.parent.login">Войти</button>
+    </div>
+
+    <div class="shadow"></div>
+    </form>
+
+</div>
+
+
+<script src="public/js/jquery-1.7.2.min.js?rev=1403686672" charset="utf-8" type="text/javascript"></script>
+<script src="public/js/reserv.1.01.js?rev=1403686672" charset="utf-8" type="text/javascript"></script>
+<script src="public/config.js?rev=1403686672" charset="utf-8" type="text/javascript"></script>
+<script src="public/js/popup.js?rev=1403686672" charset="utf-8" type="text/javascript"></script>
+<script src="public/js/jquery.tmpl.min.js?rev=1403686672" charset="utf-8" type="text/javascript"></script>
+<script src="public/js/knockout-2.1.0.js?rev=1403686672" charset="utf-8" type="text/javascript"></script>
+<script src="public/js/knockout.mapping-latest.min.js?rev=1403686672" charset="utf-8" type="text/javascript"></script>
+<script src="public/lmd5.js?rev=1403686672" charset="utf-8" type="text/javascript"></script>
+
+</body>
+</html>

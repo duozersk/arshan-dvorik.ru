@@ -1,0 +1,45 @@
+<html>
+<head>
+    <title>Просмотр заявки</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" href="public/common.css" type="text/css">
+    <link rel="stylesheet" href="public/tourist_claim.css" type="text/css">
+    </head>
+<body>
+    <div class="samo_container">
+        <div id="tourist_claim" samo:datasource="http://search.samo.ru/search/index.php?" samo:agent="56544" samo:fast="1">
+        <table width="100%" height="500">
+        <tr>
+            <td align="center" valign="middle">
+                <form onsubmit="return false;">
+                <table id="auth">
+                    <tr>
+                        <td colspan="2" class="header">Просмотр заявки</td>
+                    </tr>
+                    <tr>
+                        <td>E-mail:</td>
+                        <td><input type="text" name="EMAIL"></td>
+                    </tr><tr>
+                        <td>Пароль:</td>
+                        <td><input type="password" name="PSW"></td>
+                    </tr><tr>
+                        <td colspan="2">
+                            <span class="link" id="forgot_password">Забыли пароль?</span>
+                        </td>
+                    </tr><tr>
+                        <td colspan="2" align="right"><button id="tourist_auth" type="submit">Войти</button></td>
+                    </tr>
+                </table>
+                </form>
+            </td>
+        </tr>
+        </table>
+        </div>
+    </div>
+
+    <script src="public/jquery-1.4.2.min.js" charset="utf-8" type="text/javascript"></script>
+    <script src="public/tourist_claim.js" charset="utf-8" type="text/javascript"></script>
+    <script src="public/config.js" charset="utf-8" type="text/javascript"></script>
+    <script src="public/lmd5.js" charset="utf-8" type="text/javascript"></script>
+</body>
+</html>

@@ -1,0 +1,1200 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN""http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link rel="stylesheet" href="public/css/search.1.01.css?rev=1403686672" type="text/css"/>
+    <link rel="stylesheet" href="public/css/common.1.01.css?rev=1403686672" type="text/css"/>
+    <link rel="stylesheet" href="public/css/popup.css?rev=1403686672" type="text/css"/>
+    <link rel="stylesheet" href="public/css/tooltip.css?rev=1403686672" type="text/css"/>
+    <link rel="stylesheet" href="public/css/calendar.css?rev=1403686672" type="text/css"/>
+        <title>Поиск тура</title>
+</head>
+<body>
+
+
+<div class="andr_container" data-samo-uid="56544" data-samo-async="0" data-samo-datasource="http://search.samo.ru/search/index.php?" data-samo-datatarget="http://search.samo.ru/search/index.php?action=bronpage&claiminc=" id="SAMO_SEARCH" >
+    <div class="samo_width">
+    <div class="samo_width samo_shadow1">
+        <div class="samo_relative">
+            <div class="samo_width samo_no_bron_blocker" id="FORM_BLOCKER" title="Модуль поиска не активен">
+                &nbsp;
+            </div>
+        </div>
+
+
+        <div>
+            <div class="samo_tab samo_tab_hidden samo_tab_hidden" id="SAMO_TAB_TOUR"><span class="planet">&nbsp;</span>Туры</div>
+            <div class="samo_tab samo_tab_hidden" id="SAMO_TAB_HOTEL"><span class="hotel">&nbsp;</span>Отели</div>
+            
+            <span class="show_hide_instruction book-i" id="INSTRUCTION">Инструкция по поиску и бронированию туров</span>
+            <span class="show_hide_terms book-a" id="TERMS">Словарь терминов и определений</span>
+        </div>
+
+        <div class="samo_tab_container samo_tab_container_hidden" id="SAMO_TAB_CONTAINER_TOUR">
+        <!-- Верхняя таблица (Откуда и Куда) -->
+        <table class="up_tab" cellpadding="0" cellspacing="0">
+            <tr class="header">
+
+                <td class="description">
+                         Откуда
+                </td>
+
+                <td class="otkuda">
+                        <div class="slct">
+                            <select name="TOWNFROMINC" id="TOWNFROMINC" autocomplete="off">
+                            </select>
+                        </div>
+
+                </td>
+
+                <td class="index_top">&nbsp;</td>
+
+                <td class="description3">
+                     Куда
+                </td>
+
+                <td class="otkuda">
+                    <div class="samo_tab_parent" id="SAMO_TAB_PARENT_TOUR_STATEINC_GROUP">
+                        <div class="slct samo_tab_wanderer" id="STATEINC_GROUP">
+
+                            <select name="STATEINC" id="STATEINC" autocomplete="off">
+                            </select>
+                        </div>
+                    </div>
+                </td>
+
+                <td class="index_top">&nbsp;</td>
+
+
+
+
+                <td class="show_hide_operator_select description2">Оператор</td>
+                <td class="otkuda show_hide_operator_select">
+                    <div class="samo_tab_parent" id="SAMO_TAB_PARENT_TOUR_OPERATORS_GROUP">
+                        <div class="samo_tab_wanderer" id="OPERATORS_GROUP">
+                            <div class="samo_operators_slct">
+                                <div class="slct">
+                                    <div id="OPERATORS" data-samo-list-name="Выберите&hellip;" class="samo_checkbox_mini_container">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+                                </div>
+                                &nbsp;<input type="checkbox" id="OPERATORS_ANY">&nbsp;Любой
+                            </div>
+                        </div>
+                    </div>
+                </td>
+
+                <td class="show_hide_operator_select index_top">&nbsp;</td>
+
+                <td class="show_hide_tour_select description">Тур</td>
+
+                <td class="otkuda show_hide_tour_select">
+                    <div class="slct">
+                        <select name="TOUR" id="TOUR" autocomplete="off">
+                        </select>
+                    </div>
+                </td>
+
+                <td class="show_hide_tour_select index_top">&nbsp;</td>
+
+                <td align="center">
+                                            &nbsp;
+                                    </td>
+
+            </tr>
+        </table>
+        <!-- Верхняя таблица (Откуда и Куда) -->
+
+
+
+        <!-- Средняя таблица (форма выбора) -->
+        <table class="mid_tab" cellpadding="0" cellspacing="0">
+
+            <tr><td class="v_space2">&nbsp;</td></tr>
+
+        <tr>
+        <td valign="top" class="td1">
+
+         <!-- Таблица вылета -->
+         <table class="vilet" cellpadding="0" cellspacing="0">
+             <tr>
+                 <td colspan="2" class="title"><span class="airplane">&nbsp;</span>Вылет</td>
+             </tr>
+
+             <tr>
+                 <td class="td_left">От</td>
+                 <td class="td_right">
+                     <div class="samo_tab_parent" id="SAMO_TAB_PARENT_TOUR_CHECKIN_BEG">
+                        <input class="search_field2 calendar date samo_tab_wanderer" type="text" maxlength="20" autocomplete="off" placeholder="дд.мм.гггг" id="CHECKIN_BEG" name="CHECKIN_BEG" data-samo-icon-width="28" data-samo-icon-height="25">
+                     </div>
+                 </td>
+             </tr>
+
+             <tr><td class="v_space2">&nbsp;</td></tr>
+
+             <tr>
+             <td class="td_left">До</td>
+             <td class="td_right">
+                 <div class="samo_tab_parent" id="SAMO_TAB_PARENT_TOUR_CHECKIN_END">
+                    <input class="search_field2 calendar date samo_tab_wanderer" type="text" maxlength="20" autocomplete="off" placeholder="дд.мм.гггг" id="CHECKIN_END" name="CHECKIN_END" data-samo-icon-width="28" data-samo-icon-height="25">
+                 </div>
+             </td>
+             </tr>
+
+         </table>
+         <!-- Таблица вылета -->
+
+         <!-- Таблица ночей -->
+         <div class="samo_tab_parent" id="SAMO_TAB_PARENT_TOUR_NIGHTS_GROUP">
+             <div class="samo_tab_wanderer" id="NIGHTS_GROUP">
+                 <table class="vilet" cellpadding="0" cellspacing="0">
+                     <tr>
+                         <td colspan="5" class="title"><span class="clock">&nbsp;</span>Ночей</td>
+                     </tr>
+
+                     <tr>
+                         <td class="td_left">От</td>
+                         <td class="td_right"><div class="slct night_slct"><select class="s48" name="NIGHTS_FROM" id="NIGHTS_FROM" autocomplete="off"></select></div></td>
+                         <td width="20">&nbsp;</td>
+                         <td class="td_left">До</td>
+                         <td class="td_right"><div class="slct night_slct"><select class="s48" name="NIGHTS_TILL" id="NIGHTS_TILL" autocomplete="off"></select></div></td>
+                     </tr>
+                 </table>
+             </div>
+         </div>
+         <!-- Таблица ночей -->
+
+
+          <!-- Таблица туристов -->
+          <div class="samo_tab_parent" id="SAMO_TAB_PARENT_TOUR_PEOPLES_GROUP">
+              <div class="samo_tab_wanderer" id="PEOPLES_GROUP">
+                <table class="vilet" cellpadding="0" cellspacing="0">
+                    <tr>
+                        <td colspan="5" class="title"><span class="user">&nbsp;</span>Туристы</td>
+                    </tr>
+
+                    <tr>
+                        <td class="td_left">&nbsp;</td>
+                        <td class="td_right font_13">Взрослых</td>
+                        <td width="20">&nbsp;</td>
+                        <td class="td_left">&nbsp;</td>
+                        <td class="td_center font_13"><span class="margin">Детей</span></td>
+                    </tr>
+
+                    <tr>
+                        <td class="td_left"></td>
+                        <td class="td_right"><div class="slct tourists_slct"><select class="s48" name="ADULT" id="ADULT" autocomplete="off"></select></div></td>
+                        <td width="20">&nbsp;</td>
+                        <td class="td_left"></td>
+                        <td class="td_right"><div class="slct tourists_slct"><select class="s48" name="CHILD" id="CHILD" autocomplete="off"></select></div></td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="5">
+                            <div class="child_age">
+                            <div class="kids_age samo_child_age_title">Возраст детей</div>
+                            <input class="samo_child_age" maxlength="2">
+                            <input class="samo_child_age" maxlength="2">
+                            <input class="samo_child_age" maxlength="2">
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+              </div>
+          </div>
+          <!-- Таблица туристов -->
+
+            <div class="samo_tab_parent" id="SAMO_TAB_PARENT_TOUR_SHOW_ADV_GROUP">
+                <div class="samo_tab_wanderer" id="SHOW_ADV_GROUP">
+                    <span id="SHOW_ADV">Дополнительно</span>
+                    <div class="show_hide_adv">
+                        <!-- Таблица Валюты -->
+                        <table class="vilet" cellpadding="0" cellspacing="0">
+                            <tr>
+                                <td colspan="4" class="title"><span class="coins">&nbsp;</span>Стоимость</td> <td><select name="CURRENCYINC" id="CURRENCYINC" class="slct exchange" autocomplete="off"></select></td>
+                            </tr>
+
+                            <tr><td class="v_space2">&nbsp;</td></tr>
+
+                            <tr>
+                                <td class="td_left">От</td>
+                                <td class="td_right s68"><div class="s68"><input class="text-input price_field" maxlength="7" type="text" autocomplete="off" name="COSTMIN" id="COSTMIN"></div></td>
+                                <td width="20">&nbsp;</td>
+                                <td class="td_left">До</td>
+                                <td class="td_right"><input class="text-input price_field" maxlength="7" type="text" autocomplete="off" name="COSTMAX" id="COSTMAX"></td>
+                            </tr>
+
+
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            <!-- Таблица Валюты -->
+        </td>
+
+
+
+        <td valign="top" class="h_space">&nbsp;</td>
+
+        <td valign="top" class="td3 categories">
+            <div class="samo_tab_parent" id="SAMO_TAB_PARENT_TOUR_STARS_GROUP">
+                <div class="samo_tab_wanderer" id="STARS_GROUP">
+                    <table class="category_table" cellpadding="0" cellspacing="0">
+                        <tr>
+                        <td class="category_star1"><span class="star">&nbsp;</span>Категория </td>
+                        <td class="category_star2"><label><input type="checkbox" id="STARS_ANY" checked="checked">Любое</label></td>
+                    </tr>
+                    </table>
+                    <div id="STARS" class="samo_checkbox_mini_container">
+                    </div>
+                </div>
+            </div>
+            <table class="meal_table" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td class="category_meal1"><span class="meal">&nbsp;</span>Питание</td>
+                    <td class="category_meal2"><label><input type="checkbox" id="MEAL_ANY" checked="checked">Любое</label></td>
+                </tr>
+            </table>
+
+            <div id="MEAL" class="samo_checkbox_mini_container">
+            </div>
+        </td>
+
+
+
+        <td valign="top"  class="h_space">&nbsp;</td>
+
+        <td valign="top"  class="td2">
+            <div class="samo_tab_parent" id="SAMO_TAB_PARENT_TOUR_TOWNTO_GROUP">
+                <div class="samo_tab_wanderer" id="TOWNTO_GROUP">
+                    <table cellpadding="0" cellspacing="0" class="category">
+                        <tr>
+                        <td class="category_left"><span class="resort">&nbsp;</span>Курорт</td>
+                        <td class="category_right"><label  class="right"><input type="checkbox" id="TOWNTO_ANY" checked="checked"><span>Любой</span></label></td>
+                        </tr>
+                    </table>
+                    <div class="scroll_area" id="TOWNTO">
+                    </div>
+                </div>
+            </div>
+        </td>
+
+
+
+
+        <td valign="top"  class="h_space">&nbsp;</td>
+
+        <td valign="top"  class="td4">
+            <div class="samo_tab_parent" id="SAMO_TAB_PARENT_TOUR_HOTELS_GROUP">
+                <div class="samo_tab_wanderer" id="HOTELS_GROUP">
+                    <table class="samo_hotels_head">
+                        <tr>
+                            <td class="samo_hotels_head_left"><span class="category_name"><span class="hotel">&nbsp;</span>Отель</span></td>
+
+                        <td class="samo_hotels_head_right"><input type="checkbox" id="HOTELS_LIST_ANY" checked="checked"> Любой</input>
+                        &nbsp;
+                        <span class="category_search">
+                            <input class="text-input search_field hotel_search search" type="text" maxlength="20" autocomplete="off" placeholder="Поиск..."  id="HOTELS_FILTER">
+                        </span>
+                        </td>
+                        </tr>
+                    </table>
+
+                    <div class="samo_relative samo_hotels_parent">
+                        <div class="hotel_scroll_area samo_absolute" id="HOTELS"></div>
+                    </div>
+                    <div id="HOTELS_LIST">
+                        <div class="samo_hotels_list_header">Выбранные отели</div>
+                    </div>
+                </div>
+            </div>
+
+        </td>
+
+        </tr>
+        </table>
+        <!-- Средняя таблица (форма выбора) -->
+
+
+
+        <!-- Нижняя таблица (кнопка "поиск" и слоган) -->
+        <table class="low_tab" cellpadding="0" cellspacing="0">
+            <tr>
+                <td colspan="10" class="shadow2"></td>
+            </tr>
+
+            <tr class="low_tab_tr">
+                <td class="text">
+                                            <a class="samo_brand" href="http://samo.travel/" target="_blank">SAMO-Travel</a>
+                                    </td>
+                <td class="samo_left_align">
+                    <span class="samo_radio show_hide_packettype" id="PACKETTYPE">
+                        <label><input type="radio" name="PACKETTYPE" value="0"> Пакетный тур</label>
+                        <br>
+                        <label><input type="radio" name="PACKETTYPE" value="1"> Только проживание</label>
+                    </span>
+                </td>
+
+                <td class="show_hide_filter samo_left_align">
+                    <label><input class="chk_box" type="checkbox" name="STOPSALE" id="STOPSALE" checked="checked"> Нет остановки продаж</label>
+                    <br>
+                    <label class="show_hide_freight"><input class="chk_box" type="checkbox" name="FREIGHT" id="FREIGHT" checked="checked"> Есть места на рейсы</label>
+                </td>
+                <td>
+                    <div class="samo_tab_parent" id="SAMO_TAB_PARENT_TOUR_LOAD">
+                        <button class="btn search_btn samo_tab_wanderer" id="LOAD" title="Найти тур">Поиск</button>
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="srch_shadow" colspan="10">&nbsp;</td>
+            </tr>
+
+        </table>
+
+        <!-- Нижняя таблица (кнопка "поиск" и слоган) -->
+        </div>
+
+        <!-------------------- Контейнер ОТЕЛИ -------------------->
+            <div class="samo_tab_container samo_tab_container_hidden" id="SAMO_TAB_CONTAINER_HOTEL">
+
+                <table class="up_tab" cellpadding="0" cellspacing="0">
+                    <tr class="header">
+
+                        <td class="hotel_whereto">Куда</td>
+
+                        <td class="hotel_whereto2">
+                            <div class="samo_tab_parent" id="SAMO_TAB_PARENT_HOTEL_STATEINC_GROUP"></div>
+                        </td>
+
+                        <td class="index_top">&nbsp;</td>
+
+
+                        <td class="hotel_whereto">Когда</td>
+                        <td class="width180"> <div class="samo_tab_parent" id="SAMO_TAB_PARENT_HOTEL_CHECKIN_BEG">&nbsp;</div></td>
+
+                                <td class="width10">±</td>
+                                <td class="width45">
+                                <div class="samo_tab_parent slct" id="SAMO_TAB_PARENT_HOTEL_DAYS_OFFSET">
+                                <select id="DAYS_OFFSET" name="DAYS_OFFSET"></select>
+                                </div>
+                                </td>
+
+                                <td class="hotel_days">Дней</td>
+
+                        <td class="index_top">&nbsp;</td>
+
+                        <td class="hotel_touroperator">Туроператор</td>
+                        <td class="width100"><div class="samo_tab_parent" id="SAMO_TAB_PARENT_HOTEL_OPERATORS_GROUP"></div>
+                        </td>
+                        <td>&nbsp;</td>
+                    </tr>
+                </table>
+
+
+                <table class="hotel_mid_tab" cellpadding="0" cellspacing="0">
+
+                   <tr class="v_space2"><td>&nbsp;</td></tr>
+
+                   <tr>
+                       <!----------- Первый блок ----------->
+                        <td valign="top" class="first_block_hotel">
+
+                            <table width="100%" cellspacing="0" cellpadding="0">
+                                <tr>
+                                    <td class="samo_tab_parent" id="SAMO_TAB_PARENT_HOTEL_NIGHTS_GROUP" colspan="2"></td>
+                                </tr>
+
+                                <tr>
+                                    <td class="samo_tab_parent" id="SAMO_TAB_PARENT_HOTEL_PEOPLES_GROUP" colspan="2"></td>
+                                </tr>
+
+                                <tr>
+                                    <td class="samo_tab_parent" id="SAMO_TAB_PARENT_HOTEL_STARS_GROUP" valign="top" colspan="2"></td>
+                                </tr>
+
+                                <tr>
+                                    <td class="samo_tab_parent" id="SAMO_TAB_PARENT_HOTEL_SHOW_ADV_GROUP" valign="top" colspan="2"></td>
+                                </tr>
+
+
+
+                            </table>
+
+                        </td>
+                       <!----------- Первый блок ----------->
+
+                       <td class="vspace">&nbsp;</td>
+
+                       <!----------- Второй блок ----------->
+
+                       <td class="samo_tab_parent second_block_hotel" id="SAMO_TAB_PARENT_HOTEL_TOWNTO_GROUP" valign="top" colspan="2"></td>
+
+                       <!----------- Второй блок ----------->
+
+                       <td class="vspace">&nbsp;</td>
+
+                       <!----------- Третий блок ----------->
+                       <td rowspan="10" class="samo_tab_parent third_block_hotel" id="SAMO_TAB_PARENT_HOTEL_HOTELS_GROUP" valign="top"></td>
+                       <!----------- Третий блок ----------->
+
+                   </tr>
+
+
+
+                </table>
+
+
+                <!----------- Нижняя таблица отелей ----------->
+                <table cellspacing="0" cellpadding="0" class="low_tab_hotel">
+                    <tr class="v_space2"><td colspan="5" class="v_space3">&nbsp;</td></tr>
+
+                    <tr class="footer_hotels">
+                        <td class="text">Найдите идеальный отдых</td>
+                        <td class="samo_tab_parent" id="SAMO_TAB_PARENT_HOTEL_LOAD" colspan="4"></td>
+                    </tr>
+
+                    <tr>
+                        <td class="hotels_shadow" colspan="5">&nbsp;</td>
+                    </tr>
+                </table>
+                <!----------- Нижняя таблица отелей ----------->
+
+
+
+            </div>
+        <!-------------------- Контейнер ОТЕЛИ -------------------->
+
+            </div>
+    </div>
+
+
+    
+    <div class="samo_width" id="SEARCH_RESULTS_CONTAINER">
+        <div id="SAMO_NOTIFY"></div>
+        <table class="result" cellspacing="0" cellpadding="0" id="SEARCH_RESULTS">
+        </table>
+    </div>
+    
+
+    <!-- Служба поддержки -->
+    <script type="text/x-jquery-tmpl" id="OPERATOR_SUPPORT_TMPL">
+        {{if phone || www || email}}
+            <div>
+                <table class="support" cellpadding="2">
+                    <tr>
+                        <td colspan="2" align="center"><strong class="samo_gray">Служба поддержки туроператора</strong><br></td>
+                    </tr>
+                    {{if phone}}
+                        <tr><td align="left"><strong>Телефон:</strong></td><td align="left" nowrap="nowrap">${phone}</td></tr>
+                    {{/if}}
+                    {{if email}}
+                        <tr><td align="left"><strong>E-mail:</strong></td><td align="left" nowrap="nowrap"><a href="mailto:${email}">${email}</a></td></tr>
+                    {{/if}}
+                    {{if www}}
+                        <tr><td align="left"><strong>Сайт:</strong></td><td align="left" nowrap="nowrap"><a href="${www}" target="_blank">${www}</a></td></tr>
+                    {{/if}}
+                </table>
+            </div>
+        {{/if}}
+    </script>
+    <!-- /Служба поддержки -->
+
+
+    <!-- Уведомление -->
+    <script type="text/x-jquery-tmpl" id="SEARCH_NOTIFY_TMPL">
+        <div>${text}</div>
+    </script>
+    <!-- /Уведомление -->
+
+    <!-- Ниего не найдено -->
+    <script type="text/x-jquery-tmpl" id="SEARCH_RESULTS_NO_PRICES_TMPL">
+        <tr class="samo_scroll_to"><td colspan="10"><div class="empty">Подходящих туров не найдено<br>Попробуйте изменить критерии поиска</div></td>
+    </script>
+    <!-- /Ниего не найдено -->
+
+    <!-- Словарь терминов -->
+    <script type="text/x-jquery-tmpl" id="TERMS_TMPL">
+        <div class="samo_popup_default_text">
+            <h3>Варианты размещения в отелях</h3>
+            <ul>
+                <li><strong>SNGL</strong> - Размещение одного человека в стандартном номере.</li>
+                <li><strong>SNGL+chld</strong> - Размещение одного взрослого с одним ребенком.</li>
+                <li><strong>DBL</strong> - Размещение двух взрослых человек в стандартном номере.</li>
+                <li><strong>DBL+chld</strong> - Размещение 2-х взрослых и одного ребенка в стандартном номере.</li>
+                <li><strong>TRPL</strong> или <strong>DBL+EXB</strong> - Трёхместное размещение.</li>
+            </ul>
+
+            <h3>Типы номеров</h3>
+            <ul>
+                <li><strong>STANDART</strong> - Стандартный номер для этого отеля.</li>
+                <li><strong>SUPERIOR</strong> - Номер улучшенной планировки. Площадь больше, чем у стандартного.</li>
+                <li><strong>SUITE</strong> - Номер улучшенной планировки. Наличие дивана и журнального столика. Возможно размещение до 4-х человек.</li>
+                <li><strong>APARTMENT</strong> - Мини квартира в отеле с одной или несколькими комнатами. Наличие кухни или кухонного уголка с необходимой техникой.</li>
+            </ul>
+
+            <h3>Типы питания</h3>
+            <ul>
+                <li><strong>RO</strong> - Проживание, без питания.</li>
+                <li><strong>BB</strong> - Только завтрак.</li>
+                <li><strong>НВ</strong> - Полупансион, в стоимость включён завтрак и ужин. Бесплатный чай, кофе, вода только на завтрак.</li>
+                <li><strong>ALL</strong> - Всё включено. Завтрак, обед, ужин. Напитки местного производства в течение всего дня (алкогольные и безалкогольные), дополнительное питание (барбекю в барах отеля, лёгкие закуски, второй завтрак и т.д.)</li>
+                <li><strong>UALL</strong> - Ультра всё включено. Завтрак, поздний завтрак, обед, полдник и ужин. Возможно дополнительное бесплатное питание в ресторанах с кухней разных народов мира. Широкий выбор напитков местного и импортного производства.</li>
+            </ul>
+            <i>Набор услуг и блюд, входящий в каждый из вариантов питания может меняться в зависимости от страны и отеля.</i>
+
+            <h3>Классификация номеров по размещению</h3>
+            <ul>
+                <li><strong>ROH</strong> - Размещение в любой свободный номер без выбора вида из окна.</li>
+                <li><strong>SEA VIEW, SV</strong> - Номер с видом на море.</li>
+                <li><strong>BEACH VIEW</strong> - Номер в видом на пляж.</li>
+                <li><strong>POOL VIEW</strong> - Номер с видом на бассейн, на территория отеля.</li>
+                <li><strong>GARDEN VIEW</strong> - Номер с видом на сад отеля.</li>
+            </ul>
+
+            <br>
+            Дополнительную информацию Вы можете получить на интернет-портале <a href="http://tonkosti.ru/%D0%A0%D1%83%D1%81%D1%81%D0%BA%D0%BE-%D1%82%D1%83%D1%80%D0%B0%D0%B3%D0%B5%D0%BD%D1%82%D1%81%D0%BA%D0%B8%D0%B9_%D1%80%D0%B0%D0%B7%D0%B3%D0%BE%D0%B2%D0%BE%D1%80%D0%BD%D0%B8%D0%BA" target="_blank" class="tonkosti">&laquo;Тонкости туризма&raquo;</a>.
+        </div>
+    </script>
+    <!-- /Словарь терминов -->
+
+    <!-- Информация о гостинице -->
+    <script type="text/x-jquery-tmpl" id="HOTEL_INFO_TMPL">
+        {{if $data && (description[0]._ || additional[0].resort || additional[0].port || additional[0].location || additional[0].roomsCount || additional[0].beach)}}
+            <div class="samo_hotel_info_container">
+                <table class="samo_hotel_information" cellpadding="0" cellspacing="0" border="0" >
+                    <tr>
+                    <td>
+
+                        <table cellpadding="0" cellspacing="0" border="0" >
+                            <tr><td class="samo_hotel_name" colspan="2"> ${name} <span>{{if state || town}}<span class="samo_gray">({{/if}}{{if state}}${state}{{if town}}, {{/if}}{{/if}} {{if town}}${town}{{/if}}{{if state || town}})</span>{{/if}}</span></td></tr>
+
+                            <tr>
+                                <td>
+                                    <div class="samo_hotel_photo">
+                                    {{if previewImage}}
+                                        <span class="samo_hotel_info_preview_image">
+                                            <img src="${previewImage}">
+                                        </span>
+                                    {{/if}}
+                                    </div>
+                                    <div class="photo_shadow">&nbsp;</div>
+                                </td>
+                                <td class="samo_hotel_descr">
+                                    <span class="left_description">Категория: {{if starNumber}}<span class="samo_star_${starNumber} samo_star" title="${star}">&nbsp;</span>{{else}}<span>${star}</span>{{/if}}</span>
+
+                                    {{if additional[0].resort}}
+                                        <span class="left_description">Ближайший курорт:<span>${additional[0].resort} {{if additional[0].resortDistance}}(${additional[0].resortDistance}){{/if}}</span> </span>
+                                    {{/if}}
+
+
+                                    {{if additional[0].roomsCount}}
+                                        <span class="left_description">Количество комнат:<span>${additional[0].roomsCount}</span> </span>
+                                    {{/if}}
+
+
+                                    {{if additional[0].port}}
+                                        <span class="left_description">Ближайший аэропорт:<span>${additional[0].port} {{if additional[0].portDistance}}(${additional[0].portDistance}){{/if}}</span> </span>
+                                    {{/if}}
+
+
+                                    {{if additional[0].location}}
+                                        <span class="left_description">Расположение:<span>${additional[0].location}</span> </span>
+                                    {{/if}}
+
+
+
+                                    {{if additional[0].beach}}
+                                        <span class="left_description">Пляж:<span>${additional[0].beach}</span></span>
+                                    {{/if}}
+
+
+                                </td>
+                            </tr>
+                        </table>
+
+                        <table cellpadding="0" cellspacing="0" border="0" >
+
+                            <tr>
+                                <td class="hotel_inf">
+                                    {{if description[0]._}}
+                                        ${description[0]._}
+                                    {{/if}}
+                                </td>
+
+                                {{if contentProvider[0].name}}
+                                    <td class="operator_inf">
+                                        <div class="operator_logo">{{if contentProvider[0].logo}}<img src="${contentProvider[0].logo}" title="${contentProvider[0].name}" hspace="5" vspace="5" align="absmiddle" border="0">{{else}}${contentProvider[0].name}{{/if}}</div>
+                                        {{if contentProvider[0].contentUrl}}
+                                            <div class="more_btn">
+                                                <a href="${contentProvider[0].contentUrl}" target="_blank" rel="nofollow">Узнать больше...</a>
+                                            </div>
+                                            <div class="more_btn_shadow">&nbsp;</div>
+                                        {{/if}}
+                                    </td>
+                                {{/if}}
+
+                            </tr>
+
+                        </table>
+                    </td>
+                    </tr>
+                </table>
+
+
+
+                </div>
+
+        {{/if}}
+    </script>
+    <!-- /Информация о гостинице -->
+
+    
+    <!-- Выбор номера в гостинице -->
+    <script type="text/x-jquery-tmpl" id="HOTEL_NEXT_PRICE_TMPL">
+        <div>
+            <div class="price_next_container">
+                {{each ROOMS}}
+
+                <table class="room_select_top">
+                    {{if room}}
+                            <tr><td class="line_transfer"><span class="room_select_top_bold">Номер:</span>${room}</td></tr>
+                    {{/if}}
+
+                    {{if htplace}}
+                    <tr><td class="line_transfer"><span class="room_select_top_bold">Размещение:</span>${htplace}</td></tr>
+                    {{/if}}
+
+                    {{if meal}}
+                    <tr><td class="line_transfer"><span class="room_select_top_bold">Питание:</span>${meal}</td></tr>
+                    {{/if}}
+
+                    {{if description}}
+                    <tr><td class="line_transfer"> <span class="room_select_top_bold">Услуги:</span>${description}</td></tr>
+                    {{/if}}
+                </table>
+
+
+
+                <table class="room_select_bottom" border="0" cellpadding="0" cellspacing="0">
+                    <tr>
+                    <td class="room_data">Заезд/Выезд</td>
+                    <td class="room_data">Кол-во ночей</td>
+                    <td class="room_data">Наличие мест</td>
+                    <td class="room_data">цена</td>
+                    <td class="room_data">&nbsp;</td>
+                    </tr>
+                {{each prices}}
+                    <tr>
+                    <td class="room_descr_data">${datebeg} - ${dateend} </td>
+                    <td class="room_descr_nights">${nights}</td>
+                    <td class="room_descr">{{if byRequest}}По запросу{{else}}В наличии{{/if}}</td>
+                    <td class="room_descr_price">
+                        {{if priceShow == 2 && parseFloat(price) > parseFloat(discoCost)}}<span title="Старая цена" class="samo_strikeout">${price} ${currency}</span>{{/if}}
+
+                        {{if priceShow}}
+                            ${discoCost}
+                        {{else}}
+                            ${price}
+                        {{/if}}
+                        ${currency}
+                    </td>
+                    <td class="room_bron"><a class="btn room_bron_btn" href="${bronUrl}" target="_blank">Забронировать</a></td>
+                    </tr>
+                {{/each}}
+
+                </table>
+
+                {{/each}}
+
+                <div class="close"><span class="price_next_container_close">Закрыть</span></div>
+                <br>
+            </div>
+        </div>
+    </script>
+    <!-- /Выбор номера в гостинице -->
+
+    <!-- Результат поиска -->
+    <script type="text/x-jquery-tmpl" id="SEARCH_RESULTS_TMPL">
+        {{if PAGE == 1}}
+
+
+        <tr>
+            <!--Результаты поиска-->
+                            <td colspan="11" class="srch_result">Результаты поиска</td>
+                        <!--Результаты поиска-->
+        </tr>
+
+
+        <tr class="v_space"> <td colspan="11">&nbsp;</td> </tr>
+
+            <tr>
+                <td colspan="11" class="samo_scroll_to result_head">
+                    <table cellpadding="0" cellspacing="0">
+
+                        <tr>
+                            <td class="result_list">
+                                Вид:&nbsp;<span class="samo_results_full btn price_short {{if !shortView}}result_button_selected{{/if}}">Полный</span>&nbsp;<span class="samo_results_short btn price_short  {{if shortView}}result_button_selected{{/if}}">Краткий</span>
+                            </td>
+                            <td class="left_border">Отели:</td>
+                            <td class="width_100_left"><span class="confirm">&nbsp;</span>Мгновенное подтверждение</td>
+                            <td>&nbsp;</td>
+                            <td class="tickets2">Билеты:</td>
+                            <td><span class="tickets_to">&nbsp;</span><br>Туда</td>
+                            <td><span class="tickets_from">&nbsp;</span><br>Обратно</td>
+                            <td><span class="tickets_green">&nbsp;</span><br>Есть</td>
+                            <td><span class="tickets_orange">&nbsp;</span><br>Нет</td>
+                            <td></td>
+                            <td><span class="tickets_grey">&nbsp;</span><br>По запросу</td>
+                          </tr>
+                    </table>
+                </td>
+            </tr>
+
+        <tr>
+            <td colspan="11" class="full_result_shadow">&nbsp;</td>
+        </tr>
+
+
+            <tr style="{{if !shortView}}display:none;{{/if}}" class="table_head show_hide_short_result result_short_header header">
+
+
+                <td class="flight_short">{{if tab == 'TOUR'}}<span class="road_w">&nbsp;</span>Вылет{{/if}}</td>
+                <td class="hotel_short2"><span class="hotel_w">&nbsp;</span>Отель</td>
+                <td class="nights_short2"><span class="nights_w">&nbsp;</span>Ночей</td>
+                <td class="room_short"><span class="room_w">&nbsp;</span>Размещение</td>
+                <td class="meal_short"><span class="meal_w">&nbsp;</span>Питание</td>
+                <td class="price_short2"><span class="price_w">&nbsp;</span>Стоимость</td>
+                <td class="show_hide_installment installment_short" style="display:none"><span class="installment_w">&nbsp;</span>Рассрочка</td>
+                {{if showTo}}
+                    <td class="show_hide_operator"><span class="touroperator_w">&nbsp;</span>Туроператор</td>
+                {{else}}
+                    <td></td>
+                {{/if}}
+                <td {{if tab == 'TOUR'}} class="flight_short2"{{/if}}>{{if tab == 'TOUR'}}Эконом{{/if}}</td>
+                <td class="class_30">{{if tab == 'TOUR'}}<span class="airplane_w">&nbsp;</span>{{/if}}</td>
+                <td {{if tab == 'TOUR'}} class="flight_short2"{{/if}}>{{if tab == 'TOUR'}}Бизнес{{/if}}</td>
+            </tr>
+        {{else}}
+
+
+            <tr>
+                <td colspan="11" class="samo_new_results samo_scroll_to"><hr></td>
+            </tr>
+
+            <tr><td colspan="11" class="show_hide_full_result samo_new_results" {{if shortView}}style="display:none;"{{/if}}>&nbsp;</td></tr>
+
+        {{/if}}
+
+        {{each PRICES}}
+            <tr style="{{if shortView}}display:none;{{/if}}" class="samo_price_row_${id} show_hide_full_result bg_td {{if momentConfirm == 1}} tr3_full tr4_full{{/if}} {{if id}}samo_res_hover samo_bron{{/if}}" {{if id}}data-samo-claiminc="${id}"{{/if}}>
+                <!-- Полный вид результатов поиска -->
+            {{if tab == 'EXCURSION'}}
+                <td colspan="4">
+
+                    <table>
+                        <tr>
+                            <td>
+                                {{if image}}
+                                    <img src="${image}" alt="${name}" title="${name}" style="text-align: left">
+                                {{/if}}
+                            </td>
+                            <td>
+
+                                {{if name}}
+                                    <strong>Название:</strong> ${name}<br>
+                                {{/if}}
+
+                                {{if language}}
+                                    <strong>Язык:</strong> ${language}<br>
+                                {{/if}}
+                                {{if category}}
+                                    <strong>Категория:</strong> ${category}<br>
+                                {{/if}}
+                                {{if destination}}
+                                    <strong>Отправление:</strong> ${destination}<br>
+                                {{/if}}
+                                {{if duration}}
+                                    <strong>Продолжительность:</strong> {{if duration%24==0 }}${duration/24} дн.{{else}}${duration} ч.{{/if}}<br>
+                                {{/if}}
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            {{else}}
+                <td class="first_block pic">
+                    {{if stopSale == 1 || (noFreight == 1 && tab == 'TOUR')}}
+                        <div class="samo_relative">
+                            <div class="samo_width samo_no_bron_blocker" title="{{if stopSale == 1}}Остановка продаж в гостинице{{else}}Нет мест на рейсы{{/if}}">
+                                <div class="samo_no_bron_blocker_{{if stopSale == 1}}stop_sale{{else}}no_freight{{/if}}">&nbsp;</div>
+                            </div>
+                        </div>
+                    {{/if}}
+
+                    <div class="image">
+                        {{if hotelUrl}}<a href="${hotelUrl}" target="_blank" class="samo_hotel_url_${hotelInfoKey}" rel="nofollow">{{/if}}<img border="0" src="${hotelImage}" class="samo_hotel_preview_image" title="{{if hotelUrl}}Описание отеля {{/if}} ${hotel}">{{if hotelUrl}}</a>{{/if}}
+                    </div>
+                    <div class="pic_shadow"></div>
+                </td>
+
+
+
+                <td class="second_block" valign="top">
+
+                    <div class="hotel_name" data-samo-operatorHotelKey="${original.hotelKey}">
+                        {{if hotelUrl}}
+                            <a href="${hotelUrl}" rel="nofollow"  target="_blank" class="samo_hotel_info samo_hotel_url_${hotelInfoKey}" data-samo-hotelinfo-key="${hotelInfoKey}" data-samo-preview-image="${hotelImage}">${hotel}</a>
+                        {{else}}
+                            <span class="samo_hotel_info" data-samo-hotelinfo-key="${hotelInfoKey}" data-samo-preview-image="${hotelImage}">${hotel}</span>
+                        {{/if}}
+                    </div>
+
+                    <div class="category3 samo_star_category samo_nowrap">
+                        Категория:&nbsp;{{if starNumber}}<span class="samo_star_${starNumber} samo_star" title="${star}">&nbsp;</span>{{else}}<span>${star}</span>{{/if}}
+                    </div>
+
+                    {{if town}}
+                        <div class="category3">Регион: <span>{{if townUrl}}<a href="${townUrl}" target="_blank">{{/if}}${town}{{if townUrl}}</a>{{/if}}</span></div>
+                    {{/if}}
+
+
+                    {{if $data.nights || checkIn}}<div class="category3">{{if checkIn}}{{if tab == 'HOTEL'}}Заезд{{else}}Вылет{{/if}}: <span>${checkIn}</span>{{/if}} {{if nights}}Ночей: <span>${nights}</span>{{/if}}</div>{{/if}}
+
+
+
+                    {{if showTour && tour}}
+                        <div class="category3">Тур: <span>${tour}{{if program}} / ${program}{{/if}}</span></div>
+                    {{/if}}
+
+
+                    {{if showSpo && (typeof(spo) != 'undefined')}}
+                        <div class="category3">СПО: <span>${spo}</span></div>
+                    {{/if}}
+
+                </td>
+
+                <td class="v_line"><div></div></td>
+
+
+
+                <td class="third_block">
+
+                    <table class="flight" cellspacing="0" cellpadding="0">
+                        {{if tab == 'TOUR'}}
+                        <tr>
+                            <td colspan="2">Эконом:</td>
+
+
+                            <td class="airplane2">&nbsp;</td>
+                            <td colspan="2">${advFlightClassName}:</td>
+
+
+                        </tr>
+                        <tr>
+                            <td {{if placeStatus[0]['in'] == 1}}class="green_right" title="Есть места"{{else}}{{if placeStatus[0]['in'] == 2}}class="red_right" title="Нет мест"{{else}}class="grey_right" title="Места по запросу"{{/if}}{{/if}}>
+                            &nbsp;
+                            </td>
+
+                            <td {{if placeStatus[0]['out'] == 1}}class="green_left" title="Есть места"{{else}}{{if placeStatus[0]['out'] == 2}}class="red_left" title="Нет мест"{{else}}class="grey_left" title="Места по запросу"{{/if}}{{/if}}>
+                            &nbsp;
+                            </td>
+
+                            <td></td>
+
+                            <td {{if placeStatus[1]['in'] == 1}}class="green_right" title="Есть места"{{else}}{{if placeStatus[1]['in'] == 2}}class="red_right" title="Нет мест"{{else}}class="grey_right" title="Места по запросу"{{/if}}{{/if}}>
+                            &nbsp;
+                            </td>
+
+
+                            <td {{if placeStatus[1]['out'] == 1}}class="green_left" title="Есть места"{{else}}{{if placeStatus[1]['out'] == 2}}class="red_left" title="Нет мест"{{else}}class="grey_left" title="Места по запросу"{{/if}}{{/if}}>
+                            &nbsp;
+                            </td>
+                        </tr>
+                        {{/if}}
+
+                    </table>
+
+
+                    {{if room}}
+                    <div class="category2"><span class="room">&nbsp;</span>Номер: <span>${room}</span></div>
+                    {{/if}}
+
+                    {{if htplace}}
+                    <div class="category2"><span class="placement">&nbsp;</span>Размещение: <span>${htplace}</span></div>
+                    {{/if}}
+
+                    {{if meal}}
+                    <div class="category2"><span class="meal">&nbsp;</span>Питание: <span>${meal}</span></div>
+                    {{/if}}
+
+                </td>
+            {{/if}}
+
+
+                <td class="orange_arrow" valign="top"><div class="orange_arrow">&nbsp;</div></td>
+
+
+                <td class="fourth_block">
+                    <div class="old_price_full">Стоимость:
+                        {{if priceShow == 2}}
+                            {{if typeof priceMin != 'undefined'}}
+                                {{if parseFloat(priceMin) > parseFloat(discoCostMin)}}<span title="Старая цена"> от ${priceMin} ${currency}</span>{{/if}}
+                            {{else}}
+                                {{if parseFloat(price) > parseFloat(discoCost)}}<span title="Старая цена">${price} ${currency}</span>{{/if}}
+                            {{/if}}
+                        {{/if}}
+                    </div>
+                    <div class="new_price" {{if priceShow == 2 && ((typeof priceMin != 'undefined' && parseFloat(priceMin) > parseFloat(discoCostMin)) || (parseFloat(price) > parseFloat(discoCost)))}} title="Цена со скидкой" {{/if}}>
+                        {{if priceShow}}
+                            {{if typeof priceMin != 'undefined'}}
+                                от ${discoCostMin}
+                            {{else}}
+                                ${discoCost}
+                            {{/if}}
+                        {{else}}
+                            {{if typeof priceMin != 'undefined'}}
+                                от ${priceMin}
+                            {{else}}
+                                ${price}
+                            {{/if}}
+                        {{/if}}
+                        ${currency}
+                    </div>
+                    {{if comment}}
+                        <span class="price_comment">
+                            {{html comment.replace('\n', '<br>')}}
+                        </span>
+
+                    {{/if}}
+                    {{if installmentPrice}}
+                        <div class="samo_installment full_installment" data-samo-installment-id="${installmentId}">
+                            В рассрочку: ${installmentPrice} ${currency}
+                        </div>
+                    {{/if}}
+                    {{if showTo}}
+                        <div class="logo">
+                            {{if operatorImage}}
+                                <img src="${operatorImage}" title="${operator}" data-samo-operator="${operatorKey}" class="samo_operator">
+                            {{else}}
+                                <br>
+                                <span data-samo-operator="${operatorKey}" class="samo_operator">${operator}</span>
+                            {{/if}}
+                        </div>
+                    {{else}}
+                        <br><br>
+                    {{/if}}
+                    {{if id}}
+                        {{if typeof(nextId) == 'undefined'}}
+                            <a class="btn samo_bron white" href="${bronUrl}" target="_blank"                                data-samo-id="${id}"
+                                data-samo-hotel="${hotelKey}"
+                                data-samo-operator="${operatorKey}"
+                                data-samo-hotelName="${hotel}"
+                                data-samo-hotelImage="${hotelImage}"
+                                data-samo-price="${price}"
+                                data-samo-currencyAlias="${currency}"
+                                data-samo-currency="${currencyKey}"
+                                data-samo-mealName="${meal}"
+                                data-samo-checkin="${checkIn}"
+                                data-samo-nights="${nights}"
+                                data-samo-townfrom="${townFromKey}"
+                                data-samo-state="${stateKey}"
+                                data-samo-adult="${adult}"
+                                data-samo-child="${child}"
+                                data-samo-isMomentConfirm="${momentConfirm}"
+                                data-samo-bronUrl="${bronUrl}"
+                                data-samo-hotelStarName="${star}"
+                            >Забронировать</a>
+                        {{else}}
+                            <a class="btn samo_price_next" href="javascript:void(0);" data-samo-next-id="${id}">{{if tab == 'EXCURSION'}}Подробнее{{else}}Выбрать{{if tab == 'HOTEL'}} номер{{/if}}{{/if}}</a>
+                        {{/if}}
+                    {{/if}}
+
+                </td>
+                <td colspan="5" class="samo_empty_td"></td>
+            </tr>
+            <tr><td colspan="11" class="show_hide_full_result full_result_shadow" {{if shortView}}style="display:none;"{{/if}}>&nbsp;</td></tr>
+            <!-- /Полный вид результатов поиска -->
+
+            <!-- Краткий вид результатов поиска -->
+            <tr style="{{if !shortView}}display:none;{{/if}}" class="samo_price_row_${id} show_hide_short_result tr{{if momentConfirm == 1}}3_short{{else}}{{if $index % 2}}1{{else}}2{{/if}}{{/if}} {{if stopSale == 1}} samo_stop_sale {{else}}{{if noFreight == 1 && tab == 'TOUR'}} samo_no_freight {{/if}}{{/if}} {{if id}}samo_res_hover{{/if}} {{if id}} samo_bron {{/if}}" {{if id}} data-samo-claiminc="${id}"{{/if}}>
+                <td>${checkIn}</td>
+                <td class="hotel_short nowrap_normal">
+                    {{if hotelUrl}}
+                        <a href="${hotelUrl}" rel="nofollow" target="_blank" class="samo_hotel_info samo_hotel_url_${hotelInfoKey}" data-samo-hotelinfo-key="${hotelInfoKey}" data-samo-preview-image="${hotelImage}">${hotel}</a>
+                    {{else}}
+                        <span href="${hotelUrl}" target="_blank" class="samo_hotel_info" data-samo-hotelinfo-key="${hotelInfoKey}" data-samo-preview-image="${hotelImage}">${hotel}</span>
+                    {{/if}}
+
+                    {{if town}}
+                        ({{if townUrl}}<a class="region" href="${townUrl}" target="_blank">{{/if}}${town}{{if townUrl}}</a>{{/if}})
+                    {{/if}}
+                </td>
+                <td>${nights}</td>
+                <td class="nowrap_normal">${room} / ${htplace}</td>
+                <td>${meal}</td>
+
+                <td class="price_short" nowrap="nowrap">
+                        {{if id}}
+                            <a
+
+                                data-samo-id="${id}"
+                                data-samo-hotel="${hotelKey}"
+                                data-samo-operator="${operatorKey}"
+                                data-samo-hotelName="${hotel}"
+                                data-samo-hotelImage="${hotelImage}"
+                                data-samo-price="${price}"
+                                data-samo-currencyAlias="${currency}"
+                                data-samo-currency="${currencyKey}"
+                                data-samo-mealName="${meal}"
+                                data-samo-checkin="${checkIn}"
+                                data-samo-nights="${nights}"
+                                data-samo-townfrom="${townFromKey}"
+                                data-samo-state="${stateKey}"
+                                data-samo-adult="${adult}"
+                                data-samo-child="${child}"
+                                data-samo-isMomentConfirm="${momentConfirm}"
+                                data-samo-bronUrl="${bronUrl}"
+                                data-samo-hotelStarName="${star}"
+
+                            title="{{if typeof(nextId) == 'undefined'}}Забронировать{{else}}Выбрать{{if tab=='HOTEL'}} номер{{/if}}{{/if}}" class="btn price_short {{if typeof(nextId) == 'undefined'}}samo_bron{{else}}samo_price_next{{/if}}" {{if typeof(nextId) != 'undefined'}}data-samo-next-id="${id}"{{/if}} href="{{if typeof(nextId) == 'undefined'}}${bronUrl}{{else}}javascript:void(0);{{/if}}" {{if typeof(nextId) == 'undefined'}}target="_blank"{{/if}}>
+                                <span class="short_bron_btn_font">
+                                    {{if priceShow == 2}}
+                                        {{if typeof priceMin != 'undefined'}}
+                                            {{if parseFloat(priceMin) > parseFloat(discoCostMin)}}
+                                                <span title="Старая цена" class="old_price_short"><span>от ${priceMin} ${currency}</span></span>
+                                            {{/if}}
+                                        {{else}}
+                                            {{if parseFloat(price) > parseFloat(discoCost)}}
+                                                <span title="Старая цена" class="old_price_short"><span>${price} ${currency}</span></span>
+                                            {{/if}}
+                                        {{/if}}
+                                    {{/if}}
+                                    <span {{if ((typeof priceMin != 'undefined' && parseFloat(priceMin) > parseFloat(discoCostMin)) || (parseFloat(price) > parseFloat(discoCost))) && priceShow == 2}} title="Цена со скидкой" class="with_discount" {{/if}}>
+                                        {{if priceShow}}
+                                            {{if typeof priceMin != 'undefined'}}
+                                                от ${discoCostMin}
+                                            {{else}}
+                                                ${discoCost}
+                                            {{/if}}
+                                        {{else}}
+                                            {{if typeof priceMin != 'undefined'}}
+                                                от ${priceMin}
+                                            {{else}}
+                                                ${price}
+                                            {{/if}}
+                                        {{/if}}
+                                        ${currency}
+                                    </span>
+                                </span>
+                            </a>
+                        {{else}}
+                            {{if stopSale == 1}}
+                                <span class="samo_error_text">
+                                    {{if priceShow}}
+                                        {{if typeof priceMin != 'undefined'}}
+                                            от ${discoCostMin}
+                                        {{else}}
+                                            ${discoCost}
+                                        {{/if}}
+                                    {{else}}
+                                        {{if typeof priceMin != 'undefined'}}
+                                            от ${priceMin}
+                                        {{else}}
+                                            ${price}
+                                        {{/if}}
+                                    {{/if}}
+                                    ${currency} (остановка продаж)
+                                </span>
+                            {{else}}
+                                {{if noFreight && tab == 'TOUR'}}
+                                    <span class="samo_error_text">
+                                        {{if priceShow}}
+                                            {{if typeof priceMin != 'undefined'}}
+                                                от ${discoCostMin}
+                                            {{else}}
+                                                ${discoCost}
+                                            {{/if}}
+                                        {{else}}
+                                            {{if typeof priceMin != 'undefined'}}
+                                                от ${priceMin}
+                                            {{else}}
+                                                ${price}
+                                            {{/if}}
+                                        {{/if}}
+                                        ${currency} (нет мест)
+                                    </span>
+                                {{/if}}
+                            {{/if}}
+                        {{/if}}
+                        {{if comment}}<sup class="samo_show_tooltip" data-samo-hint="${comment}">(?)</sup>{{/if}}
+                </td>
+
+                  <td class="show_hide_installment" style="display:none">
+                      {{if installmentPrice}}
+                          <span class="samo_installment" data-samo-installment-id="${installmentId}">
+                              ${installmentPrice} ${currency}
+                          </span>
+                      {{else}}
+                          &mdash;
+                      {{/if}}
+                  </td>
+                  {{if showTo}}
+                      <td class="samo_operator" data-samo-operator="${operatorKey}">${operator}</td>
+                  {{else}}
+                      <td></td>
+                  {{/if}}
+
+                  <td {{if tab == 'TOUR'}}class="flight_short samo_flight_right_res"{{/if}}>{{if tab == 'TOUR'}}
+                      <span {{if placeStatus[0]['in'] == 1}}class="green_right in_line" title="Есть места"{{else}}{{if placeStatus[0]['in'] == 2}}class="red_right in_line" title="Нет мест"{{else}}class="grey_right in_line" title="Мало мест"{{/if}}{{/if}}>&nbsp;</span>
+                      <span {{if placeStatus[0]['out'] == 1}}class="green_left in_line" title="Есть места"{{else}}{{if placeStatus[0]['out'] == 2}}class="red_left in_line" title="Нет мест"{{else}}class="grey_left in_line" title="Мало мест"{{/if}}{{/if}}>&nbsp;</span>
+                  {{/if}}</td>
+
+                  <td {{if tab == 'TOUR'}}class="30" {{/if}}>&nbsp;</td>
+
+                  <td {{if tab == 'TOUR'}}class="flight_short samo_flight_right_res"{{/if}}>{{if tab == 'TOUR'}}
+                      <span {{if placeStatus[1]['in'] == 1}}class="green_right in_line" title="Есть места"{{else}}{{if placeStatus[1]['in'] == 2}}class="red_right in_line" title="Нет мест"{{else}}class="grey_right in_line" title="Мало мест"{{/if}}{{/if}}>&nbsp;</span>
+                      <span {{if placeStatus[1]['out'] == 1}}class="green_left in_line" title="Есть места"{{else}}{{if placeStatus[1]['out'] == 2}}class="red_left in_line" title="Нет мест"{{else}}class="grey_left in_line" title="Мало мест"{{/if}}{{/if}}>&nbsp;</span>
+                        {{if advFlightClassName != 'Бизнес'}}
+                            <sup class="samo_show_tooltip" data-samo-hint="Класс &quot;${advFlightClassName}&quot;">(?)</sup>
+                        {{/if}}
+                      {{/if}}</td>
+            </tr>
+            <!-- /Краткий вид результатов поиска -->
+        {{/each}}
+
+        <!-- Еще результаты -->
+        <tr>
+            <td colspan="11">
+                <table cellpadding="0" cellspacing="0" class="result_footer">
+                    <tr>
+                        <td id="GOTOTOP" class="samo_up uparrow">Наверх</td>
+
+                        {{if PAGE < PAGES_COUNT}}
+                            <td class="samo_next" data-samo-page="${PAGE + 1}">Еще результаты</td>
+                        {{/if}}
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <!-- /Еще результаты -->
+    </script>
+    <!-- /Результат поиска -->
+
+</div>
+<div title="Наверх" id="SAMO_TOTOP_BTN" style="display: none;">&nbsp;</div>
+
+
+
+
+    <script src="public/js/jquery-1.7.2.min.js?rev=1403686672" charset="utf-8" type="text/javascript"></script>
+    <script src="public/js/search.1.01.js?rev=1403686672" charset="utf-8" type="text/javascript"></script>
+    <script src="public/js/calendar.js?rev=1403686672" charset="utf-8" type="text/javascript"></script>
+    <script src="public/config.js?rev=1403686672" charset="utf-8" type="text/javascript"></script>
+    <script src="public/js/popup.js?rev=1403686672" charset="utf-8" type="text/javascript"></script>
+    <script src="public/js/jquery.tmpl.min.js?rev=1403686672" charset="utf-8" type="text/javascript"></script>
+    <script src="public/js/tooltip.js?rev=1403686672" charset="utf-8" type="text/javascript"></script>
+
+
+
+
+</body>
+</html>

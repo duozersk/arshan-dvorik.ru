@@ -1,0 +1,356 @@
+<html>
+<head>
+    <title>Просмотр заявки</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" href="public/common.css" type="text/css">
+    <link rel="stylesheet" href="public/tourist_claim.css" type="text/css">
+    <link rel="stylesheet" href="public/instruction.css" type="text/css">
+    </head>
+<body>
+    <div class="samo_container">
+        <div id="tourist_claim" samo:datasource="http://search.samo.ru/search/index.php?" samo:agent="56544">
+        <div id="veil"></div>
+        <div id="popup_form"></div>
+        <table width="100%">
+            <tr>
+                <td colspan="2" align="left">
+                                    </td>
+                <td align="center" rowspan="2" valign="middle" class="tourist_claim_help_container" width="32%">
+                    <fieldset class="tourist_claim_help hidden">
+                        <legend>Служба поддержки</legend>
+                        <table width="100%">
+                            <tr>
+                                <td colspan="2" class="can_be_empty header" align="center">{%text%}</td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" class="bold can_be_empty" align="center">
+                                    <a href="{%iu%}" target="_blank" class="can_be_empty instruction"><img src="./public/instruction.png" hspace="3" align="absmiddle">Инструкция по работе с заявкой</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="bold">Телефон: </td><td class="can_be_empty">{%provider_phone%}</td>
+                            </tr>
+                            <tr>
+                                <td class="bold">E-mail: </td><td class="can_be_empty"><a href="mailto:{%provider_email%}">{%provider_email%}</a></td>
+                            </tr>
+                        </table>
+                    </fieldset>
+                    &nbsp;
+                </td>
+            </tr>
+            <tr>
+                            <td></td>
+                        <td align="center">
+                <table id="authed" align="center" class="shadow_box mini" width="95%">
+                    <tr id="loading_title">
+                        <td colspan="2">Подождите, идет загрузка...</td>
+                    </tr>
+                    <tr id="content_title">
+                        <td>
+                            <table width="100%">
+                                <tr class="tourist_claim_buyer_name">
+                                    <td nowrap="nowrap">
+                                        Здраствуйте, <strong id="authed_name"></strong>
+                                    </td>
+                                    <td align="right"><strong id="authed_email"></strong></td>
+                                    <td align="right"><button id="authed_logout">Выйти</button></td>
+                                </tr>
+                                <tr>
+                                    <td class="claim_main_info" colspan="3">
+                                        <table width="100%">
+                                        <tr>
+                                            <td>
+                                                <span class="claim_main_info_claim_header_number claim_main_info_el">Номер вашей заявки: <b class="claim_main_info_number"></b></span>
+                                                <span class="claim_main_info_status">
+                                                </span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td align="right">
+                                                <table width="100%">
+                                                    <tr>
+                                                        <td align="left">
+                                                            <span class="showhide_all_claims">
+                                                                <button class="show_all_claims adv_button">Показать все заявки</button>
+                                                            </span>
+                                                        </td>
+                                                        <td align="right" nowrap="nowrap">
+                                                            <span class="showhide_pay">
+                                                                <button class="show_pay hidden adv_button">Оплатить заявку</button>
+                                                            </span>
+                                                            <button class="show_documents hidden adv_button">Документы к заявке</button>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        </table>
+
+        <br>
+        <div class="claim_actions">
+            <table align="center" width="97%">
+                <tr>
+                    <td valign="top" align="left">
+                        <!-- Информация о способах оплаты, должна быть в "контейнере" с классом "pay_info" -->
+                        <div class="pay_info hidden slide replacer">
+                            <table align="left" class="replacer">
+                                <thead>
+                                <tr>
+                                    <th class="header">Способы оплаты</th>
+                                    <th align="right" style="text-align: right;"><span class="replacer_close">скрыть</span></th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr class="_element clickable do_pay" samo:url="{%url%}" samo:is_form="{%is_form%}">
+                                    <td class="bold" nowrap valign="top" width="20%">{%name%}{%form%}</td>
+                                    <td class="gray" valign="top">{%description%}</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!-- Информация о документах, должна быть в "контейнере" с классом "documents_info" -->
+                        <div class="documents_info hidden slide replacer">
+                            <table align="left" class="replacer">
+                                <thead>
+                                <tr>
+                                    <th class="header" colspan="2">Документы</th>
+                                    <th align="right" style="text-align: right;"><span class="replacer_close">скрыть</span></th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr class="_element clickable download_document" samo:id="{%id%}">
+                                    <td class="bold" nowrap width="10%">{%type%}</td>
+                                    <td class="gray">{%name%}</td>
+                                    <td width="10%"><span class="link">печать</span></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="3" class="can_be_empty comment">{%text%}</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        &nbsp;
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- Информация о списке заявок, должна быть в "контейнере" с классом "claim_list_info" -->
+        <div class="claim_list_info hidden" id="claim_list_info">
+            <fieldset>
+                <legend>Выберите заявку для просмотра</legend>
+                <div id="claim_list_info_scroller">
+                    <table width="100%" align="center">
+                        <tr class="_element show_claim clickable {%odd%}" samo:inc="{%inc%}">
+                            <td><span class="link">{%number%}</span></td>
+                            <td>{%cdate%}</td>
+                            <td>{%townfrom%} <span class="arrow">-&gt;</span> {%state%}</td>
+                            <td><span class="link">показать</span></td>
+                        </tr>
+                    </table>
+                </div>
+                <br>
+                <button class="close_pay_form">Отмена</button>
+            </fieldset>
+        </div>
+
+
+        <a name="#claim"></a>
+        <!-- Общая информация о заявке, должна быть в "контейнере" с классом "common_info" -->
+        <div class="hidden show_on_claim">
+        <fieldset>
+            <legend>Общая информация</legend>
+            <div class="common_info hidden">
+            <table class="res">
+                <thead>
+                    <tr>
+                        <th>Номер заявки</th>
+                        <th>Создана</th>
+                        <th>Направление</th>
+                        <th>Заезд</th>
+                        <th class="showhide_provider">Туроператор</th>
+                        <th class="showhide_price">Стоимость</th>
+                        <th class="showhide_price">Оплачено</th>
+                                                    <th>Состояние</th>
+                                                <th>Примечание</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>{%number%}</td>
+                        <td>{%cdate%}</td>
+                        <td>{%townFrom%} <span class="arrow">-></span> {%state%}</td>
+                        <td>{%datebeg%} - {%dateend%}</td>
+                        <td class="showhide_provider">{%provider%} заявка {%providerNumber%} {%status%}</td>
+                        <td class="showhide_price">{%price%} {%currency%}</td>
+                        <td class="showhide_price bold">{%paid%} {%paidCurrency%}</td>
+                                                    <td>{%condition%}</td>
+                                                <td>{%note%}</td>
+                    </tr>
+                </tbody>
+            </table>
+            </div>
+        </fieldset>
+        </div>
+
+        <!-- Информация о покупателе, должна быть в "контейнере" с классом "buyer_info" -->
+        <div class="buyer_info hidden">
+        <fieldset>
+            <legend>Покупатель</legend>
+            <table class="res">
+                <thead>
+                <tr>
+                    <th>ФИО</th>
+                    <th>Паспорт</th>
+                    <th>Адрес</th>
+                    <th>Телефон</th>
+                    <th>E-mail</th>
+                </tr>
+                </thead>
+                <tbody>
+                    <tr class="_element">
+                        <td>{%name%}</td>
+                        <td>{%pserie%} {%pnumber%} {%выдан pgiven%} {%pgivenorg%} {%(до pexpire)%}</td>
+                        <td>{%address%}</td>
+                        <td>{%mobile%}</td>
+                        <td>{%email%}</td>
+                    </tr>
+                </tbody>
+
+            </table>
+        </fieldset>
+        </div>
+
+        <!-- Информация о туристах, должна быть в "контейнере" с классом "people_info" -->
+        <div class="people_info hidden">
+        <fieldset>
+            <legend>Туристы</legend>
+            <table class="res">
+                <thead>
+                <tr>
+                    <th>ФИО</th>
+                    <th>Возраст</th>
+                    <th>MR/MRS</th>
+                    <th>Пол</th>
+                    <th>Дата рождения</th>
+                    <th>Паспорт</th>
+                </tr>
+                </thead>
+                <tbody>
+                    <tr class="_element">
+                        <td class="people" samo:peopleKey="{%key%}">{%name%}</td>
+                        <td>{%age%}</td>
+                        <td>{%human%}</td>
+                        <td>{%sex%}</td>
+                        <td>{%born%}</td>
+                        <td>{%pserie%} {%pnumber%} {%выдан pgiven%} {%pgivenorg%} {%(до pexpire)%}</td>
+                    </tr>
+                </tbody>
+
+            </table>
+        </fieldset>
+        </div>
+
+        <!-- Информация о отелях, должна быть в "контейнере" с классом "hotel_info" -->
+        <div class="hotel_info hidden">
+        <fieldset>
+            <legend>Проживание</legend>
+            <table class="res">
+                <thead>
+                <tr>
+                    <th>Отель</th>
+                    <th>Расположение</th>
+                    <th>Заезд</th>
+                    <th>Номер</th>
+                    <th>Размещение</th>
+                    <th>Питание</th>
+                    <th width="60">Туристы</th>
+                </tr>
+                </thead>
+                <tbody>
+                    <tr class="_element">
+                        <td><a href="{%url%}" target="_blank" class="hotel_url">{%name%}</a> {%star%}</td>
+                        <td>{%state%}, {%town%}</td>
+                        <td>{%datebeg%} - {%dateend%}</td>
+                        <td>{%room%}</td>
+                        <td>{%htplace%}</td>
+                        <td>{%meal%}</td>
+                        <td><span class="link people_list" samo:people_list="{%people_list%}">{%people_count%}</span></td>
+                    </tr>
+                </tbody>
+
+            </table>
+        </fieldset>
+        </div>
+
+        <!-- Информация о транспорте, должна быть в "контейнере" с классом "transport_info" -->
+        <div class="transport_info hidden">
+        <fieldset>
+            <legend>Транспорт</legend>
+            <table class="res">
+                <thead>
+                <tr>
+                    <th>Название</th>
+                    <th>Класс</th>
+                    <th>Отправление</th>
+                    <th>Прибытие</th>
+                    <th width="60">Туристы</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr class="_element">
+                    <td>{%name%}</td>
+                    <td>{%class%}{%/frplace%}</td>
+                    <td>{%departure_state%}, {%departure_town%} {%(departure_port)%} {%datebeg%} {% в departure_time%}</td>
+                    <td>{%arrival_state%}, {%arrival_town%} {%(arrival_port)%} {%dateend%} {% в arrival_time%}</td>
+                    <td><span class="link people_list" samo:people_list="{%people_list%}">{%people_count%}</span></td>
+                </tr>
+                </tbody>
+            </table>
+        </fieldset>
+        </div>
+
+        <!-- Информация о услугах, должна быть в "контейнере" с классом "service_info" -->
+        <div class="service_info hidden">
+        <fieldset>
+            <legend>Услуги</legend>
+            <table class="res">
+                <thead>
+                <tr>
+                    <th>Тип</th>
+                    <th>Название</th>
+                    <th>Период</th>
+                    <th width="60">Туристы</th>
+                </tr>
+                </thead>
+                <tbody>
+                    <tr class="_element">
+                        <td>{%type%}</td>
+                        <td>{%name%}</td>
+                        <td>{%datebeg%} - {%dateend%}</td>
+                        <td><span class="link people_list" samo:people_list="{%people_list%}">{%people_count%}</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </fieldset>
+        </div>
+        <br>
+        <span class="claim_main_info_status"></span>
+    </div>
+    <br>
+    <script src="public/jquery-1.4.2.min.js" charset="utf-8" type="text/javascript"></script>
+    <script src="public/tourist_claim.js" charset="utf-8" type="text/javascript"></script>
+    <script src="public/config.js" charset="utf-8" type="text/javascript"></script>
+    <script src="public/lmd5.js" charset="utf-8" type="text/javascript"></script>
+    <script src="public/instruction.js" charset="utf-8" type="text/javascript"></script>
+</body>
+</html>

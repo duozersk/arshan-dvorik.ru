@@ -1,0 +1,207 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN""http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link rel="stylesheet" href="public/css/search_mini_vertical.1.01.css?rev=1403686672" type="text/css"/>
+    <link rel="stylesheet" href="public/css/common.1.01.css?rev=1403686672" type="text/css"/>
+    <link rel="stylesheet" href="public/css/popup.css?rev=1403686672" type="text/css"/>
+    <link rel="stylesheet" href="public/css/tooltip.css?rev=1403686672" type="text/css"/>
+    <link rel="stylesheet" href="public/css/calendar.css?rev=1403686672" type="text/css"/>
+    <link rel="stylesheet" href="public/css/popup.css?rev=1403686672" type="text/css"/>
+    <title>Поиск тура</title>
+</head>
+<body>
+
+<div class="andr_container" data-samo-uid="56544" data-samo-datasource="http://search.samo.ru/search/index.php?" data-samo-datatarget="http://search.samo.ru/search/index.php?action=bronpage&claiminc=" data-samo-mini="1" data-samo-searchurl="./index.html?" id="SAMO_SEARCH">
+
+<div>
+    <div class="samo_relative">
+        <div class="samo_width samo_no_bron_blocker" id="FORM_BLOCKER" title="Модуль поиска не активен">
+            &nbsp;
+        </div>
+    </div>
+
+<div class="header">Выбор тура</div>
+
+<table class="from-to" cellpadding="0" cellspacing="0">
+
+    <!--Откуда - Куда -->
+    <tr>
+        <td class="label"><span> Откуда </span></td>
+        <td>
+            <div class="slct">
+                <select id="TOWNFROMINC" autocomplete="off" name="TOWNFROMINC">
+                </select>
+            </div>
+        </td>
+    </tr>
+
+    <tr>
+        <td class="label"><span>Куда </span></td>
+        <td>
+            <div class="slct">
+                <select id="STATEINC" autocomplete="off" name="STATEINC">
+                </select>
+            </div>
+        </td>
+    </tr>
+
+
+    <tr>
+        <td class="label"><span>Город:</span></td>
+        <td>
+            <div class="slct">
+                <select name="TOWNTO" id="TOWNTO" autocomplete="off"></select>
+            </div>
+        </td>
+    </tr>
+</table>
+<!--Откуда - Куда -->
+
+
+
+<!-- Вылет -->
+<table class="vilet_mini" cellpadding="0" cellspacing="0">
+
+    <tr>
+        <td align="center" colspan="2"><span>Вылет</span></td>
+    </tr>
+
+    <tr>
+        <td class="left_td">От</td>
+        <td><input class="calendar date" type="text" maxlength="20" autocomplete="off" placeholder="дд.мм.гггг" data-samo-icon-width="28" data-samo-icon-height="25" id="CHECKIN_BEG" name="CHECKIN_BEG"></td>
+    </tr>
+
+    <tr>
+        <td class="left_td">До</td>
+        <td><input class="calendar date" type="text" maxlength="20" autocomplete="off" placeholder="дд.мм.гггг" data-samo-icon-width="28" data-samo-icon-height="25" id="CHECKIN_END" name="CHECKIN_END"></td>
+    </tr>
+
+</table>
+<!-- Вылет -->
+
+
+
+<!-- Колличество ночей -->
+<table class="nights" cellspacing="0" cellpadding="0">
+    <tr>
+        <td colspan="4"><span>Ночей</span></td>
+    </tr>
+
+    <tr>
+        <td class="left_td">От</td>
+
+        <td>
+            <div class="slct night_slct">
+                <select name="NIGHTS_FROM" id="NIGHTS_FROM" autocomplete="off">
+                </select>
+            </div>
+        </td>
+
+        <td class="left_td">До</td>
+
+        <td>
+            <div class="slct night_slct">
+                <select name="NIGHTS_TILL" id="NIGHTS_TILL" autocomplete="off">
+                </select>
+            </div>
+        </td>
+    </tr>
+</table>
+<!-- Колличество ночей -->
+
+
+
+<!-- Колличество Туристов -->
+<table class="tourists" cellspacing="0" cellpadding="0">
+    <tr class="tourisits_height">
+        <td colspan="4"><span>Туристы</span></td>
+    </tr>
+
+    <tr class="tourisits_height">
+        <td class="left_td"></td>
+        <td>Взрослых</td>
+        <td  class="left_td"></td>
+        <td>Детей</td>
+    </tr>
+
+    <tr class="tourisits_height">
+        <td class="td_left"></td>
+
+        <td>
+            <div class="slct tourists_slct">
+                <select name="ADULT" id="ADULT" autocomplete="off">
+                </select>
+            </div>
+        </td>
+
+        <td class="td_left"></td>
+
+        <td>
+            <div class="slct tourists_slct">
+                <select name="CHILD" id="CHILD" autocomplete="off">
+                </select>
+            </div>
+        </td>
+    </tr>
+
+
+
+</table>
+<!-- Колличество туристов -->
+
+
+<!-- Категория и питание -->
+<table class="category" cellpadding="0" cellspacing="0">
+    <tr>
+        <td class="label"><span> Категория </span></td>
+        <td>
+            <div class="slct">
+                <select name="STARS" id="STARS" autocomplete="off">
+                </select>
+            </div>
+        </td>
+    </tr>
+
+    <tr>
+        <td class="label"><span>Питание </span></td>
+        <td>
+            <div class="slct">
+                <select name="MEAL" id="MEAL" autocomplete="off">
+                </select>
+            </div>
+        </td>
+    </tr>
+
+
+    <tr>
+        <td class="label"><span>Отель </span></td>
+        <td>
+            <div class="slct">
+                <select name="HOTELS" id="HOTELS" autocomplete="off">
+                </select>
+            </div>
+        </td>
+    </tr>
+
+
+</table>
+<!-- Категория и питание -->
+
+
+<div class="header"><button class="btn button" id="LOAD">Поиск</button></div>
+
+</div>
+</div>
+
+
+
+<script src="public/js/jquery-1.7.2.min.js?rev=1403686672" charset="utf-8" type="text/javascript"></script>
+<script src="public/js/search.1.01.js?rev=1403686672" charset="utf-8" type="text/javascript"></script>
+<script src="public/js/calendar.js?rev=1403686672" charset="utf-8" type="text/javascript"></script>
+<script src="public/config.js?rev=1403686672" charset="utf-8" type="text/javascript"></script>
+<script src="public/js/tooltip.js?rev=1403686672" charset="utf-8" type="text/javascript"></script>
+<script src="public/js/popup.js?rev=1403686672" charset="utf-8" type="text/javascript"></script>
+
+</body>
+</html>

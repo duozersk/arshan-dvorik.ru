@@ -1,0 +1,675 @@
+/*========== Основные элементы ==========*/
+
+#SAMO_SEARCH {
+    width: 220px;
+    margin: 0 auto;
+    vertical-align: top;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 13px;
+}
+
+#SAMO_SEARCH select, input {
+    padding: 0;
+    margin: 0;
+}
+/*========== Основные элементы ==========*/
+
+/*========== Шапка ==========*/
+#SAMO_SEARCH .header {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    background-color: #f8a740;
+    color: #FFFFFF;
+    font-size: 24px;
+    text-align: center;
+    background-repeat: repeat-x;
+    background-position: center;
+}
+
+#SAMO_SEARCH .header img {
+    vertical-align: -3px;
+    padding-right: 5px;
+}
+/*========== Шапка ==========*/
+
+/*========== Основной блок ==========*/
+/*Откуда - куда*/
+#SAMO_SEARCH .from-to {
+    padding-top: 10px;
+    width: 100%;
+    background-color: #CCCCCC;
+}
+
+#SAMO_SEARCH .from-to td {
+    padding: 2px 5px 2px 5px;
+}
+
+#SAMO_SEARCH .slct select {
+    text-align: left;
+    width: 100%;
+    border: 0;
+    font-size: 13px;
+    line-height: 13px;
+}
+
+#SAMO_SEARCH .label {
+    font-size: 14px;
+    color: #444444;
+    text-align: left;
+}
+
+#SAMO_SEARCH .from-to a {
+    display: block;
+    text-align: center;
+    font-size: 16px;
+    color: #444444;
+    background: #eeeeee url(../pict/field_bg2.png)bottom repeat-x;
+    text-decoration: none;
+    height: 24px;
+    line-height: 24px;
+    border: 1px solid #aaaaaa;
+    border-radius: 5px;
+}
+
+#SAMO_SEARCH .from-to a:hover {
+    background: #EEEEEE;
+    color:#238f65;
+    text-decoration: none;
+    border: 1px solid #555555;
+}
+
+/*Откуда - куда*/
+
+/*Таблица вылета*/
+#SAMO_SEARCH .vilet_mini {
+    width: 100%;
+    text-align: center;
+    color: #444444;
+    font-size: 14px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    background-color: #CCCCCC;
+}
+
+#SAMO_SEARCH .vilet_mini tr {
+    height: 30px;
+}
+
+#SAMO_SEARCH .vilet_mini .td_left {
+    text-align: right;
+    width: 30px;
+}
+
+#SAMO_SEARCH .vilet_mini span {
+    display: block;
+    font-size: 16px;
+    text-align: center;
+    height: 24px;
+    line-height: 24px;
+}
+
+#SAMO_SEARCH .vilet_mini td input {
+    margin-right: 5px;
+}
+
+#SAMO_SEARCH .calendar {
+    width: 165px;
+    margin-left: 7px;
+    padding: 2px 0px;
+    border: 1px solid #777777 !important;
+    text-indent: 10px;
+    height: 18px;
+}
+
+.airplane {
+    display: inline-block;
+    background: url("../pict/bg_icons.png") no-repeat left -225px;
+    width: 28px;
+    height: 28px;
+}
+/*Таблица вылета*/
+
+/*Таблица Ночей*/
+#SAMO_SEARCH .nights {
+    width: 100%;
+    text-align: center;
+    color: #444444;
+    font-size: 14px;
+    padding-bottom: 5px;
+    background-color: #CCCCCC;
+}
+
+
+#SAMO_SEARCH .nights td {
+    height: 24px;
+    line-height: 24px;
+}
+
+#SAMO_SEARCH .nights span {
+    display: block;
+    font-size: 16px;
+    text-align: center;
+    height: 24px;
+    line-height: 24px;
+}
+
+#SAMO_SEARCH .night_slct {
+    margin: 0 auto;
+    width: 50px;
+}
+/*Таблица Ночей*/
+
+#SAMO_SEARCH .left_td {
+    width: 30px;
+}
+
+/*Таблица Туристов*/
+#SAMO_SEARCH .tourists {
+    width: 100%;
+    text-align: center;
+    color: #444444;
+    font-size: 14px;
+    background-color: #CCCCCC;
+    vertical-align: top;
+}
+
+#SAMO_SEARCH .tourisits_height {
+    height: 24px;
+}
+
+#SAMO_SEARCH .tourists span {
+    display: block;
+    font-size: 16px;
+    text-align: center;
+    height: 25px;
+    line-height: 25px;
+}
+
+#SAMO_SEARCH .tourists_slct {
+    margin: 0 auto;
+    width: 50px;
+}
+/*Таблица Туристов*/
+
+#SAMO_SEARCH .kids_age {
+    font-size: 16px !important;
+}
+
+#SAMO_SEARCH .tourists a {
+    color: #444444;
+    text-decoration: none;
+}
+
+#SAMO_SEARCH .tourists a:hover {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+/*Таблица Туристов*/
+
+/*Таблица Стоимости*/
+#SAMO_SEARCH .price {
+    width: 100%;
+    text-align: center;
+    color: #444444;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+#SAMO_SEARCH .price td {
+    height: 30px;
+    line-height: 30px;
+}
+
+#SAMO_SEARCH .price .td_left {
+    text-align: right;
+    width: 30px;
+    vertical-align: middle;
+}
+
+#SAMO_SEARCH .price span {
+    display: block;
+    font-size: 16px;
+    text-align: center;
+    height: 30px;
+    line-height: 30px;
+}
+
+#SAMO_SEARCH .price_slct {
+    width: 55px !important;
+    margin-right: 10px;
+}
+
+#SAMO_SEARCH .price_slct select {
+    width: 50px !important;
+}
+
+#SAMO_SEARCH .price a {
+    color: #444444;
+    text-decoration: none;
+}
+
+#SAMO_SEARCH .price a {
+    color: #444444;
+    text-decoration: none;
+}
+
+#SAMO_SEARCH .price a:hover {
+    color: #ffa927;
+    text-decoration: none;
+}
+
+#SAMO_SEARCH .value {
+    font-size: 16px !important;
+}
+
+#SAMO_SEARCH .price_field {
+    width: 60px;
+    margin: 2px auto 0 13px;
+    padding: 3px;
+}
+/*Таблица Стоимости*/
+
+/*Таблица Категория и питание*/
+#SAMO_SEARCH .category {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+    background-color: #CCCCCC;
+}
+
+#SAMO_SEARCH .category td {
+    padding: 2px 10px 2px 5px;
+}
+
+#SAMO_SEARCH .slct select {
+    text-align: left;
+    width: 100%;
+    border: 0;
+    font-size: 13px;
+    line-height: 13px;
+
+}
+
+/*Таблица Категория и питание*/
+
+/*
+#SAMO_SEARCH .star {
+    background-image: url(../pict/star.png);
+    background-position: 50px;
+    background-repeat: no-repeat;
+}
+
+#SAMO_SEARCH .meal {
+    background-image: url(../pict/meal.png);
+    background-position: 60px;
+    background-repeat: no-repeat;
+}
+
+#SAMO_SEARCH .hotel {
+    background-image: url(../pict/hotel.png);
+    background-position: 40px;
+    background-repeat: no-repeat;
+}
+
+#SAMO_SEARCH .search {
+    background-image: url(../pict/search.png);
+    background-position: 20px;
+    background-repeat: no-repeat;
+}
+
+#SAMO_SEARCH .from {
+    background-image: url(../pict/from.png);
+    background-position: 30px;
+    background-repeat: no-repeat;
+}
+
+#SAMO_SEARCH .to {
+    background-image: url(../pict/to.png);
+    background-position: 30px;
+    background-repeat: no-repeat;
+}
+
+#SAMO_SEARCH .clock {
+    display: inline-block;
+    background: url("../pict/bg_icons.png") no-repeat left -250px;
+    width: 28px;
+    height: 25px;
+}
+
+#SAMO_SEARCH .user {
+    display: inline-block;
+    background: url("../pict/bg_icons.png") no-repeat left -275px;
+    width: 28px;
+    height: 25px;
+}
+
+*/
+
+
+#SAMO_SEARCH a.arrow {
+    background-image: url(../pict/arrows.png);
+    background-position: 175px 4px;
+    background-repeat: no-repeat;
+    display: block;
+}
+
+#SAMO_SEARCH a.arrow:hover {
+    background-position: 175px -20px;
+}
+
+#SAMO_SEARCH a.arrow_price {
+    background-image: url(../pict/arrows.png);
+    background-position: 150px 4px;
+    background-repeat: no-repeat;
+    display: block;
+}
+
+#SAMO_SEARCH a.arrow_price:hover {
+    background-position: 150px -20px;
+}
+
+#SAMO_SEARCH .coins {
+    background-image: url(../pict/coins.png);
+    background-position: 10px;
+    background-repeat: no-repeat;
+}
+
+#SAMO_SEARCH hr {
+    width: 200px;
+    margin: 3px auto;
+    color: #FFFFFF;
+}
+
+#SAMO_SEARCH .scroll_area {
+    border: 1px solid #AAAAAA;
+    background-color: #FFFFFF;
+    height: 320px;
+    margin: 10px 10px 0 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    overflow: auto;
+}
+
+#SAMO_SEARCH .scroll_area span {
+    display: block;
+    padding-left: 5px;
+    height: 26px;
+    line-height: 26px;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+#SAMO_SEARCH .scroll_area span input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    .scroll_area span input[type="checkbox"] {
+        margin-bottom: 7px;
+    }
+}
+
+#SAMO_SEARCH .main_fields {
+    color: #444444;
+    font-size: 16px;
+    line-height: 26px;
+    vertical-align: middle;
+    margin-left: 10px;
+    margin-top: 5px;
+    float: left;
+}
+
+/*========== Средняя таблица ==========*/
+
+/*========== Подвал ==========*/
+#SAMO_SEARCH .footer {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    vertical-align: middle;
+    background-color: #f8a740;
+    margin-bottom: 10px;
+    color: #FFFFFF;
+    font-size: 24px;
+    text-align: center;
+    background-image: url(../pict/head_bg.jpg);
+    background-repeat: repeat-x;
+    background-position: center;
+}
+
+#SAMO_SEARCH .button {
+    vertical-align: middle;
+    line-height: 40px;
+    margin-top: 5px;
+}
+
+/*========== Подвал ==========*/
+
+/*========== Разные общие элементы ==========*/
+/*----------Select----------*/
+#SAMO_SEARCH .slct {
+    background-color: #FFFFFF;
+    /*background-image: url(../pict/select_bg.jpg);*/
+    background-position: top;
+    background-repeat: repeat-x;
+    color: #444444;
+    border: 1px solid #777777;
+    border-radius: 5px;
+    padding: 3px;
+    background-image: url(../pict/select_bg.jpg);
+    /*	box-shadow: 0 1px 3px rgba(50, 50, 50, 0.4) inset, 0 0px 0 rgba(255, 255, 255, 0.9);*/
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    .slct {
+        padding: 1px;
+    }
+}
+
+#SAMO_SEARCH .slct select option {
+    font-size: 13px;
+    line-height: 13px;
+}
+
+/*----------Select----------*/
+
+/*----------Кнопка из bootstrap----------*/
+#SAMO_SEARCH .btn {
+    display: inline-block;
+    *display: inline;
+    padding: 5px 40px 5px;
+    margin-bottom: 0;
+    *margin-left: .3em;
+    font-size: 16px;
+    line-height: 18px;
+    *line-height: 20px;
+    color: #444444;
+    text-align: center;
+    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+    vertical-align: middle;
+    cursor: pointer;
+    background-color: #f5f5f5;
+    *background-color: #e6e6e6;
+    background-image: -ms-linear-gradient(top, #ffffff, #e6e6e6);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#e6e6e6));
+    background-image: -webkit-linear-gradient(top, #ffffff, #e6e6e6);
+    background-image: -o-linear-gradient(top, #ffffff, #e6e6e6);
+    background-image: linear-gradient(top, #ffffff, #e6e6e6);
+    background-image: -moz-linear-gradient(top, #ffffff, #e6e6e6);
+    background-repeat: repeat-x;
+    border: 1px solid #cccccc;
+    *border: 0;
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+    border-color: #e6e6e6 #e6e6e6 #bfbfbf;
+    border-bottom-color: #b3b3b3;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    filter: progid:dximagetransform.microsoft.gradient(startColorstr = '#ffffff', endColorstr = '#e6e6e6', GradientType = 0);
+    filter: progid:dximagetransform.microsoft.gradient(enabled = false);
+    *zoom: 1;
+    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+    -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+#SAMO_SEARCH .btn:hover,
+#SAMO_SEARCH .btn:active,
+#SAMO_SEARCH .btn.active,
+#SAMO_SEARCH .btn.disabled,
+#SAMO_SEARCH .btn[disabled] {
+    background-color: #e6e6e6;
+    *background-color: #d9d9d9;
+}
+
+#SAMO_SEARCH .btn:active,
+#SAMO_SEARCH .btn.active {
+    background-color: #cccccc \9;
+}
+
+#SAMO_SEARCH .btn:first-child {
+    *margin-left: 0;
+}
+
+#SAMO_SEARCH .btn:hover {
+    color: #333333;
+    text-decoration: none;
+    background-color: #e6e6e6;
+    *background-color: #d9d9d9;
+    /* Buttons in IE7 don't get borders, so darken on hover */
+
+    background-position: 0 -15px;
+    -webkit-transition: background-position 0.1s linear;
+    -moz-transition: background-position 0.1s linear;
+    -ms-transition: background-position 0.1s linear;
+    -o-transition: background-position 0.1s linear;
+    transition: background-position 0.1s linear;
+}
+
+#SAMO_SEARCH .btn:focus {
+    outline: thin dotted #333;
+    outline: 5px auto -webkit-focus-ring-color;
+    outline-offset: -2px;
+}
+
+#SAMO_SEARCH .btn.active,
+#SAMO_SEARCH .btn:active {
+    background-color: #e6e6e6;
+    background-color: #d9d9d9 \9;
+    background-image: none;
+    outline: 0;
+    -webkit-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+    -moz-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+#SAMO_SEARCH .btn.disabled,
+#SAMO_SEARCH .btn[disabled] {
+    cursor: default;
+    background-color: #e6e6e6;
+    background-image: none;
+    opacity: 0.65;
+    filter: alpha(opacity = 65);
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+/*----------Кнопка из bootstrap----------*/
+
+/*----------button,input,select,textarea  из bootstrap----------*/
+
+#SAMO_SEARCH button,
+#SAMO_SEARCH input,
+#SAMO_SEARCH textarea {
+    font-size: 100%;
+    vertical-align: middle;
+    background-image: url(../pict/select_bg.jpg);
+    background-position: top;
+    background-repeat: repeat-x;
+}
+
+#SAMO_SEARCH textarea,
+#SAMO_SEARCH input[type="text"],
+#SAMO_SEARCH input[type="password"],
+#SAMO_SEARCH input[type="datetime"],
+#SAMO_SEARCH input[type="datetime-local"],
+#SAMO_SEARCH input[type="date"],
+#SAMO_SEARCH input[type="month"],
+#SAMO_SEARCH input[type="time"],
+#SAMO_SEARCH input[type="week"],
+#SAMO_SEARCH input[type="number"],
+#SAMO_SEARCH input[type="email"],
+#SAMO_SEARCH input[type="url"],
+#SAMO_SEARCH input[type="search"],
+#SAMO_SEARCH input[type="tel"],
+#SAMO_SEARCH input[type="color"],
+#SAMO_SEARCH .uneditable-input {
+    background-color: #ffffff;
+    border: 1px solid #999999;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    -webkit-transition: border linear 0.2s, box-shadow linear 0.2s;
+    -moz-transition: border linear 0.2s, box-shadow linear 0.2s;
+    -ms-transition: border linear 0.2s, box-shadow linear 0.2s;
+    -o-transition: border linear 0.2s, box-shadow linear 0.2s;
+    transition: border linear 0.2s, box-shadow linear 0.2s;
+    border-radius: 5px;
+}
+
+#SAMO_SEARCH label,
+#SAMO_SEARCH input,
+#SAMO_SEARCH button,
+#SAMO_SEARCH select,
+#SAMO_SEARCH textarea {
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 16px;
+}
+
+#SAMO_SEARCH textarea:focus,
+#SAMO_SEARCH input[type="text"]:focus,
+#SAMO_SEARCH input[type="password"]:focus,
+#SAMO_SEARCH input[type="datetime"]:focus,
+#SAMO_SEARCH input[type="datetime-local"]:focus,
+#SAMO_SEARCH input[type="date"]:focus,
+#SAMO_SEARCH input[type="month"]:focus,
+#SAMO_SEARCH input[type="time"]:focus,
+#SAMO_SEARCH input[type="week"]:focus,
+#SAMO_SEARCH input[type="number"]:focus,
+#SAMO_SEARCH input[type="email"]:focus,
+#SAMO_SEARCH input[type="url"]:focus,
+#SAMO_SEARCH input[type="search"]:focus,
+#SAMO_SEARCH input[type="tel"]:focus,
+#SAMO_SEARCH input[type="color"]:focus,
+#SAMO_SEARCH .uneditable-input:focus {
+    border-color: rgba(070, 070, 070, 0.5);
+    outline: 0;
+    outline: thin dotted \9;
+    /* IE6-9 */
+
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
+    -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
+}
+
+#SAMO_SEARCH input[type="radio"],
+#SAMO_SEARCH input[type="checkbox"] {
+    margin: 3px 0;
+    *margin-top: 0;
+    /* IE7 */
+
+    line-height: normal;
+    cursor: pointer;
+}
+
+/*----------button,input,select,textarea  из bootstrap----------*/
+
+#TOWNTO_CONTAINER {
+    display: none;
+}

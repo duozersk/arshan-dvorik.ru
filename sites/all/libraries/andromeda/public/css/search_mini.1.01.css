@@ -1,0 +1,110 @@
+
+#SAMO_SEARCH select, input {
+    padding: 0;
+    margin: 0;
+}
+
+.main_tab {
+    margin: 0;
+    padding: 0;
+    width: 300px;
+    height: 275px;
+    background: #cccccc;
+    border: 0;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.main_tab img {
+    padding-right: 5px;
+    vertical-align: -3px;
+}
+
+.header_mini {
+    color: #FFFFFF;
+    font-size: 24px;
+    text-align: center;
+    height: 40px;
+    background: #f57d26 url("../pict/auth_head_bg.jpg") center repeat-x;
+}
+
+.select_mini_l {
+    text-indent: 20px;
+    text-align: left;
+    height: 40px;
+    width: 80px;
+    color: #444444;
+    font-size: 16px;
+}
+
+.select_mini_r {
+    text-align: center;
+    height: 40px;
+    width: 100%;
+    color: #444444;
+}
+
+.slct_mini {
+    width: 170px;
+    display: inline-block;
+}
+
+
+
+.town_mini {
+    text-indent: 10px;
+    font-size: 14px;
+    height: 30px;
+    line-height: 30px;
+    color: #999999;
+    border-bottom: 1px solid #999999;
+}
+
+.price_a_mini {
+    text-indent: 10px;
+    font-size: 14px;
+    height: 30px;
+    line-height: 30px;
+    color: #999999;
+}
+
+.footer_mini {
+    text-align: center;
+    height: 40px;
+    background: #f57d26 url("../pict/auth_head_bg.jpg") center repeat-x;
+}
+
+.description_mini {
+    color: #444444;
+    font-size: 12px;
+    height: 30px;
+    line-height: 30px;
+    width: 55px;
+    text-indent: 10px;
+}
+
+.flight_mini {
+    width: 110px;
+    padding: 4px 2px;
+    color: #444444;
+    font-size: 14px;
+}
+
+.calendar_mini {
+    background: url(../pict/bg_icons.png) right -1228px no-repeat;
+}
+
+.nights_input {
+    display: inline-block;
+    width: 42px;
+}
+
+
+
+.tourists_slct_mini {
+    padding-left: 5px;
+    width: 50px;
+    text-align: right;
+}
+
+.h_border {border-top: 1px solid #999999;}
+
